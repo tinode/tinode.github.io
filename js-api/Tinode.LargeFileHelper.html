@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Home - Documentation</title>
+    <title>LargeFileHelper - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,28 +29,10 @@
 
 <div id="main">
     
-
+    <h1 class="page-title">LargeFileHelper</h1>
     
 
-
-
     
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
 
 
 
@@ -60,8 +42,13 @@
 <header>
     
         <h2>
-        tinode.js
+            <span class="ancestors"><a href="Tinode.html">Tinode</a>.</span>
+        
+        LargeFileHelper
         </h2>
+        
+            <div class="class-description">LargeFileHelper - collection of utilities for uploading and downloading files
+out of band. Don't instantiate this class directly. Use {Tinode.getLargeFileHelper} instead.</div>
         
     
 </header>
@@ -70,21 +57,25 @@
     <div class="container-overview">
     
         
-            <div class="description">All the logic need to connect to Tinode chat server. Tinode is a single js
-file with no dependencies. Just include <tt>tinode.js</tt> into your project.
-It will add a singleton Tinode object to the top level object, usually <tt>window</tt>.
-See <a href="https://github.com/tinode/example-react-js">https://github.com/tinode/example-react-js</a> for real-life usage.</div>
-        
+<div class="section-method">
 
-        
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="LargeFileHelper"><span class="type-signature"></span>new LargeFileHelper<span class="signature">(apikey_, authtoken_)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+
 
 
 <dl class="details">
 
     
-    <dt class="tag-version">Version:</dt>
-    <dd class="tag-version"><ul class="dummy"><li>0.15</li></ul></dd>
-    
 
     
 
@@ -103,13 +94,7 @@ See <a href="https://github.com/tinode/example-react-js">https://github.com/tino
     
 
     
-    <dt class="tag-copyright">Copyright:</dt>
-    <dd class="tag-copyright"><ul class="dummy"><li>2015-2018 Tinode</li></ul></dd>
-    
 
-    
-    <dt class="tag-license">License:</dt>
-    <dd class="tag-license"><ul class="dummy"><li>Apache 2.0</li></ul></dd>
     
 
     
@@ -117,7 +102,7 @@ See <a href="https://github.com/tinode/example-react-js">https://github.com/tino
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line1">line 1</a>
+        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line3871">line 3871</a>
     </li></ul></dd>
     
 
@@ -129,41 +114,106 @@ See <a href="https://github.com/tinode/example-react-js">https://github.com/tino
 </dl>
 
 
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
         
-            <h3>Example</h3>
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
             
-    <pre class="prettyprint"><code>&lt;head>
-&lt;script src=".../tinode.js">&lt;/script>
-&lt;/head>
+                <td class="name"><code>apikey_</code></td>
+            
 
-&lt;body>
- ...
-&lt;script>
- Tinode.enableLogging(true);
- // Add logic to handle disconnects.
- Tinode.onDisconnect = function() { ... };
- // Setup with the default transport, usually websocket.
- Tinode.setup(APP_NAME, HOST, API_KEY);
- // Connect to the server.
- Tinode.connect().then(function() {
-   // Login.
-   return Tinode.loginBasic(login, password);
- }).then(function(ctrl) {
-   // Loggedin fine, attach callbacks, subscribe to 'me'.
-   var me = Tinode.getMeTopic();
-   me.onMetaDesc = function(meta) { ... };
-   me.onData = function(invite) { ... };
-   // Subscribe, fetch topic description, the list of contacts and messages (invites).
-   me.subscribe({get: {desc: {}, sub: {}, data: {}}});
- }).catch(function(err) {
-   // Login or subscription failed, do something.
-   ...
- });
- ...
-&lt;/script>
-&lt;/body></code></pre>
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
 
-        
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                application's API key.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>authtoken_</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                previously obtained authentication token.
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
     
     </div>
 
@@ -179,6 +229,537 @@ See <a href="https://github.com/tinode/example-react-js">https://github.com/tino
 
     
 
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="cancel"><span class="type-signature"></span>cancel<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Try to cancel an ongoing upload or download.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line4024">line 4024</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="download"><span class="type-signature"></span>download<span class="signature">(relativeUrl, filename<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Download the file from a given URL using GET request. This method works with the Tinode server only.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line3960">line 3960</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>relativeUrl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>String</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                URL to download the file from. Must be relative url, i.e. must not contain the host.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>filename</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>String</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                file name to use for the downloaded file.
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+<div class="param-desc">
+    resolved/rejected when the download is completed/failed.
+</div>
+
+    
+</div>
+
+
+
+</div>
+        
+            
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="upload"><span class="type-signature"></span>upload<span class="signature">(file, onProgress, onSuccess, onFailure)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Start uploading the file.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line3893">line 3893</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>file</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>File</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                to upload
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onProgress</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Callback</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                callback. Takes one {float} parameter 0..1
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onSuccess</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Callback</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                callback. Called when the file is successfully uploaded.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onFailure</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Callback</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                callback. Called in case of a failure.
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-returns">
+<h5>Returns:</h5>
+
+        
+
+<dl class="param-type">
+    <dt>
+        Type:
+    </dt>
+    <dd>
+        
+<span class="param-type"><code>Promise</code></span>
+
+
+    </dd>
+</dl>
+
+
+<div class="param-desc">
+    resolved/rejected when the upload is completed/failed.
+</div>
+
+    
+</div>
+
+
+
+</div>
+        
     
 
     

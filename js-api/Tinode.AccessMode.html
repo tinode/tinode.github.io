@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Home - Documentation</title>
+    <title>AccessMode - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,28 +29,10 @@
 
 <div id="main">
     
-
+    <h1 class="page-title">AccessMode</h1>
     
 
-
-
     
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
 
 
 
@@ -60,7 +42,9 @@
 <header>
     
         <h2>
-        tinode.js
+            <span class="ancestors"><a href="Tinode.html">Tinode</a>.</span>
+        
+        AccessMode
         </h2>
         
     
@@ -70,21 +54,27 @@
     <div class="container-overview">
     
         
-            <div class="description">All the logic need to connect to Tinode chat server. Tinode is a single js
-file with no dependencies. Just include <tt>tinode.js</tt> into your project.
-It will add a singleton Tinode object to the top level object, usually <tt>window</tt>.
-See <a href="https://github.com/tinode/example-react-js">https://github.com/tinode/example-react-js</a> for real-life usage.</div>
-        
+<div class="section-method">
 
-        
+    
+
+    <h4 class="name" id="AccessMode"><span class="type-signature"></span>new AccessMode<span class="signature">(acs)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Helper class for handling access mode.
+</div>
+
+
+
 
 
 <dl class="details">
 
     
-    <dt class="tag-version">Version:</dt>
-    <dd class="tag-version"><ul class="dummy"><li>0.15</li></ul></dd>
-    
 
     
 
@@ -103,13 +93,7 @@ See <a href="https://github.com/tinode/example-react-js">https://github.com/tino
     
 
     
-    <dt class="tag-copyright">Copyright:</dt>
-    <dd class="tag-copyright"><ul class="dummy"><li>2015-2018 Tinode</li></ul></dd>
-    
 
-    
-    <dt class="tag-license">License:</dt>
-    <dd class="tag-license"><ul class="dummy"><li>Apache 2.0</li></ul></dd>
     
 
     
@@ -117,7 +101,7 @@ See <a href="https://github.com/tinode/example-react-js">https://github.com/tino
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line1">line 1</a>
+        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line2325">line 2325</a>
     </li></ul></dd>
     
 
@@ -129,41 +113,83 @@ See <a href="https://github.com/tinode/example-react-js">https://github.com/tino
 </dl>
 
 
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
         
-            <h3>Example</h3>
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
             
-    <pre class="prettyprint"><code>&lt;head>
-&lt;script src=".../tinode.js">&lt;/script>
-&lt;/head>
+                <td class="name"><code>acs</code></td>
+            
 
-&lt;body>
- ...
-&lt;script>
- Tinode.enableLogging(true);
- // Add logic to handle disconnects.
- Tinode.onDisconnect = function() { ... };
- // Setup with the default transport, usually websocket.
- Tinode.setup(APP_NAME, HOST, API_KEY);
- // Connect to the server.
- Tinode.connect().then(function() {
-   // Login.
-   return Tinode.loginBasic(login, password);
- }).then(function(ctrl) {
-   // Loggedin fine, attach callbacks, subscribe to 'me'.
-   var me = Tinode.getMeTopic();
-   me.onMetaDesc = function(meta) { ... };
-   me.onData = function(invite) { ... };
-   // Subscribe, fetch topic description, the list of contacts and messages (invites).
-   me.subscribe({get: {desc: {}, sub: {}, data: {}}});
- }).catch(function(err) {
-   // Login or subscription failed, do something.
-   ...
- });
- ...
-&lt;/script>
-&lt;/body></code></pre>
+            <td class="type">
+            
+                
+<span class="param-type"><code>AccessMode</code></span>
+|
 
-        
+<span class="param-type"><code>Object</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                AccessMode to copy or access mode object received from the server.
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
     
     </div>
 
