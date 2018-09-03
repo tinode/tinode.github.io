@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Connection - Documentation</title>
+    <title>Message - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Connection</h1>
+    <h1 class="page-title">Message</h1>
     
 
     
@@ -42,8 +42,11 @@
 <header>
     
         <h2>
-        Connection
+        Message
         </h2>
+        
+            <div class="class-description">Message - definition a communication message.
+Work in progress.</div>
         
     
 </header>
@@ -55,16 +58,14 @@
 <div class="section-method">
 
     
+    <h2>Constructor</h2>
+    
 
-    <h4 class="name" id="Connection"><span class="type-signature">(protected) </span>new Connection<span class="signature">(transport_)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Message"><span class="type-signature"></span>new Message<span class="signature">(topic_, content_)</span><span class="type-signature"></span></h4>
 
     
 
 
-
-<div class="description">
-    An abstraction for a websocket or a long polling connection.
-</div>
 
 
 
@@ -99,7 +100,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line523">line 523</a>
+        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line4399">line 4399</a>
     </li></ul></dd>
     
 
@@ -143,7 +144,7 @@
 
         <tr>
             
-                <td class="name"><code>transport_</code></td>
+                <td class="name"><code>topic_</code></td>
             
 
             <td class="type">
@@ -160,7 +161,36 @@
             
 
             <td class="description last">
-                network transport to use, either `ws`/`wss` for websocket or `lp` for long polling.
+                name of the topic the message belongs to.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>content_</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+|
+
+<span class="param-type"><code>Drafty</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                message contant.
                 
             </td>
         </tr>
@@ -181,19 +211,6 @@
 
 
 
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-
-<div class="param-desc">
-    a connection object.
-</div>
-
-    
-</div>
 
 
 
@@ -222,14 +239,14 @@
 
     
 
-    <h4 class="name" id="connect"><span class="type-signature"></span>connect<span class="signature">()</span><span class="type-signature"> &rarr; {Promise}</span></h4>
+    <h4 class="name" id="fromJSON"><span class="type-signature"></span>fromJSON<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
 
 
 <div class="description">
-    Initiate a new connection
+    Parse JSON into message.
 </div>
 
 
@@ -265,116 +282,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line585">line 585</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>Promise</code></span>
-
-
-    </dd>
-</dl>
-
-
-<div class="param-desc">
-    Promise resolved/rejected when the connection call completes,
-          resolution is called without parameters, rejection passes the {Error} as parameter.
-</div>
-
-    
-</div>
-
-
-
-</div>
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="disconnect"><span class="type-signature"></span>disconnect<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Terminate the network connection
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line645">line 645</a>
+        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line4423">line 4423</a>
     </li></ul></dd>
     
 
@@ -414,14 +322,14 @@
 
     
 
-    <h4 class="name" id="isConnected"><span class="type-signature"></span>isConnected<span class="signature">()</span><span class="type-signature"> &rarr; {boolean}</span></h4>
+    <h4 class="name" id="toJSON"><span class="type-signature"></span>toJSON<span class="signature">()</span><span class="type-signature"></span></h4>
 
     
 
 
 
 <div class="description">
-    Check if socket is alive.
+    Convert message object to {pub} packet.
 </div>
 
 
@@ -457,7 +365,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line673">line 673</a>
+        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line4417">line 4417</a>
     </li></ul></dd>
     
 
@@ -488,461 +396,12 @@
 
 
 
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>boolean</code></span>
-
-
-    </dd>
-</dl>
-
-
-<div class="param-desc">
-    true if connection is live, false otherwise
-</div>
-
-    
-</div>
-
 
 
 </div>
         
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="sendText"><span class="type-signature"></span>sendText<span class="signature">(msg)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    Send a string to the server.
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line660">line 660</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>msg</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                String to send.
-                
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-throws">
-<h5>Throws:</h5>
-
-        
-
-    <div class="param-desc">
-    
-        Throws an exception if the underlying connection is not live.
-    
-    </div>
-
-
-    
-</div>
-
-
-
-
-
-</div>
-        
-    
-
-    
-        <h3 class="subsection-title">Type Definitions</h3>
-
-        
-                
-<div class="section-method">
-
-    
-
-    <h4 class="name" id=".LoggerCallbackType"><span class="type-signature"></span>LoggerCallbackType<span class="signature">(event)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    A callback to log events from Connection. See Tinode.Connection#logger.
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line846">line 846</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>event</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                Event to log.
-                
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-            
-                
-<div class="section-method">
-
-    
-
-    <h4 class="name" id=".OnMessage"><span class="type-signature"></span>OnMessage<span class="signature">(message)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-<div class="description">
-    A callback to pass incoming messages to. See Tinode.Connection#onMessage.
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line818">line 818</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>message</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                Message to process.
-                
-            </td>
-        </tr>
-
     
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
-</div>
-            
     
 
     
