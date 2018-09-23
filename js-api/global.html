@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>LargeFileHelper - Documentation</title>
+    <title>Global - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">LargeFileHelper</h1>
+    <h1 class="page-title">Global</h1>
     
 
     
@@ -42,13 +42,8 @@
 <header>
     
         <h2>
-            <span class="ancestors"><a href="Tinode.html">Tinode</a>.</span>
         
-        LargeFileHelper
         </h2>
-        
-            <div class="class-description">LargeFileHelper - collection of utilities for uploading and downloading files
-out of band. Don't instantiate this class directly. Use {Tinode.getLargeFileHelper} instead.</div>
         
     
 </header>
@@ -57,20 +52,8 @@ out of band. Don't instantiate this class directly. Use {Tinode.getLargeFileHelp
     <div class="container-overview">
     
         
-<div class="section-method">
 
-    
-    <h2>Constructor</h2>
-    
-
-    <h4 class="name" id="LargeFileHelper"><span class="type-signature"></span>new LargeFileHelper<span class="signature">(tinode)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-
+        
 
 
 <dl class="details">
@@ -100,11 +83,6 @@ out of band. Don't instantiate this class directly. Use {Tinode.getLargeFileHelp
     
 
     
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line4251">line 4251</a>
-    </li></ul></dd>
-    
 
     
 
@@ -114,80 +92,7 @@ out of band. Don't instantiate this class directly. Use {Tinode.getLargeFileHelp
 </dl>
 
 
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
         
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>tinode</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code><a href="Tinode.html">Tinode</a></code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                the main Tinode object.
-                
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
     
     </div>
 
@@ -202,24 +107,18 @@ out of band. Don't instantiate this class directly. Use {Tinode.getLargeFileHelp
     
 
     
-
-    
-        <h3 class="subsection-title">Methods</h3>
+        <h3 class="subsection-title">Members</h3>
 
         
             
-<div class="section-method">
+<div class="section-members">
+<h4 class="name" id="_connection"><span class="type-signature"></span>_connection<span class="type-signature"></span></h4>
 
-    
-
-    <h4 class="name" id="cancel"><span class="type-signature"></span>cancel<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
 
 
 
 <div class="description">
-    Try to cancel an ongoing upload or download.
+    A connection object, see Connection.
 </div>
 
 
@@ -255,7 +154,7 @@ out of band. Don't instantiate this class directly. Use {Tinode.getLargeFileHelp
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line4466">line 4466</a>
+        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line910">line 910</a>
     </li></ul></dd>
     
 
@@ -272,576 +171,11 @@ out of band. Don't instantiate this class directly. Use {Tinode.getLargeFileHelp
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="download"><span class="type-signature"></span>download<span class="signature">(relativeUrl, filename<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-
-    
-
-
-
-<div class="description">
-    Download the file from a given URL using GET request. This method works with the Tinode server only.
 </div>
 
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line4377">line 4377</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
         
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
     
 
-        <tr>
-            
-                <td class="name"><code>relativeUrl</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>String</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                URL to download the file from. Must be relative url, i.e. must not contain the host.
-                
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>filename</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>String</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">
-                file name to use for the downloaded file.
-                
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>Promise</code></span>
-
-
-    </dd>
-</dl>
-
-
-<div class="param-desc">
-    resolved/rejected when the download is completed/failed.
-</div>
-
-    
-</div>
-
-
-
-</div>
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="getId"><span class="type-signature"></span>getId<span class="signature">()</span><span class="type-signature"> &rarr; {string}</span></h4>
-
-    
-
-
-
-<div class="description">
-    Get unique id of this request.
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line4478">line 4478</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>string</code></span>
-
-
-    </dd>
-</dl>
-
-
-<div class="param-desc">
-    unique id
-</div>
-
-    
-</div>
-
-
-
-</div>
-        
-            
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="upload"><span class="type-signature"></span>upload<span class="signature">(file, onProgress, onSuccess, onFailure)</span><span class="type-signature"> &rarr; {Promise}</span></h4>
-
-    
-
-
-
-<div class="description">
-    Start uploading the file.
-</div>
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line4282">line 4282</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>file</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>File</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                to upload
-                
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>onProgress</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Callback</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                callback. Takes one {float} parameter 0..1
-                
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>onSuccess</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Callback</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                callback. Called when the file is successfully uploaded.
-                
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>onFailure</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Callback</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                callback. Called in case of a failure.
-                
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="section-returns">
-<h5>Returns:</h5>
-
-        
-
-<dl class="param-type">
-    <dt>
-        Type:
-    </dt>
-    <dd>
-        
-<span class="param-type"><code>Promise</code></span>
-
-
-    </dd>
-</dl>
-
-
-<div class="param-desc">
-    resolved/rejected when the upload is completed/failed.
-</div>
-
-    
-</div>
-
-
-
-</div>
-        
     
 
     
