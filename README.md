@@ -1,3 +1,6 @@
-# tinode.github.io
+# [Tinode](https://github.com/tinode/chat/)
 
-Website, currently just generated [javascript](/js-api/) and [java](/java-api/) docs
+<a href="https://github.com/tinode/chat/"><img src="docs/logo.svg" align="left" width=128 height=128 border=0></a>
+
+* Javascript API [docs](/js-api/).
+* Java SDK [docs](/java-api/).
