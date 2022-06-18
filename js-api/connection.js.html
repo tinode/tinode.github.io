@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>connection.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Drafty.html">Drafty</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.append">append</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendAudio">appendAudio</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendButton">appendButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendImage">appendImage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendLineBreak">appendLineBreak</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendLink">appendLink</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachFile">attachFile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachJSON">attachJSON</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachments">attachments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attrValue">attrValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.entities">entities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.format">format</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.forwardedContent">forwardedContent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getContentType">getContentType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getDownloadUrl">getDownloadUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getEntityMimeType">getEntityMimeType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getEntitySize">getEntitySize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getPreviewUrl">getPreviewUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.hasAttachments">hasAttachments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.hasEntities">hasEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertAudio">insertAudio</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertButton">insertButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertImage">insertImage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isPlainText">isPlainText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isProcessing">isProcessing</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isValid">isValid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.mention">mention</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.parse">parse</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.preview">preview</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.quote">quote</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.replyContent">replyContent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.sanitizeEntities">sanitizeEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.shorten">shorten</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.tagName">tagName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.toPlainText">toPlainText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.updateVideoEnt">updateVideoEnt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.videoCall">videoCall</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.wrapAsForm">wrapAsForm</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.wrapInto">wrapInto</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.html">Tinode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.credential">credential</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.diff">diff</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.getLibrary">getLibrary</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.getVersion">getVersion</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isChannelTopicName">isChannelTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isCommTopicName">isCommTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isGroupTopicName">isGroupTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isMeTopicName">isMeTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isNewGroupTopicName">isNewGroupTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isNullValue">isNullValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isP2PTopicName">isP2PTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isRelativeURL">isRelativeURL</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.setDatabaseProvider">setDatabaseProvider</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.setNetworkProviders">setNetworkProviders</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.topicType">topicType</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.AccessMode.html">AccessMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.decode">decode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.encode">encode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getExcessive">getExcessive</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getGiven">getGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getMissing">getMissing</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getMode">getMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getWant">getWant</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isAdmin">isAdmin</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isApprover">isApprover</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isDeleter">isDeleter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isJoiner">isJoiner</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isMuted">isMuted</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isOwner">isOwner</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isPresencer">isPresencer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isReader">isReader</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isSharer">isSharer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isWriter">isWriter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setGiven">setGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setMode">setMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setWant">setWant</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.update">update</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateAll">updateAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateGiven">updateGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateMode">updateMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateWant">updateWant</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.CBuffer.html">CBuffer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#delAt">delAt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#delRange">delRange</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#filter">filter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#find">find</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#forEach">forEach</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#getAt">getAt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#getLast">getLast</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#length">length</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#put">put</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#reset">reset</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.Connection.html">Connection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#backoffReset">backoffReset</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#connect">connect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#disconnect">disconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#isConnected">isConnected</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#probe">probe</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#reconnect">reconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#sendText">sendText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#transport">transport</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.exports.TopicFnd.html">exports.TopicFnd</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.exports.TopicMe.html">exports.TopicMe</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html">MetaGetBuilder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#build">build</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#extract">extract</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withCred">withCred</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withData">withData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withDel">withDel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withDesc">withDesc</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withEarlierData">withEarlierData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterData">withLaterData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterDel">withLaterDel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterDesc">withLaterDesc</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterOneSub">withLaterOneSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterSub">withLaterSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withOneSub">withOneSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withSub">withSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withTags">withTags</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.module.exports.html">module.exports</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.Topic.html">Topic</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#deleteDatabase">deleteDatabase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#initDatabase">initDatabase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#jsonHelper">jsonHelper</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toString">toString</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">connection.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @file Abstraction layer for websocket and long polling connections.
+ *
+ * @copyright 2015-2022 Tinode LLC.
+ */
+'use strict';
+
+import {
+  jsonParseHelper
+} from './utils.js';
+
+let WebSocketProvider;
+let XHRProvider;
+
+// Error code to return in case of a network problem.
+const NETWORK_ERROR = 503;
+const NETWORK_ERROR_TEXT = "Connection failed";
+
+// Error code to return when user disconnected from server.
+const NETWORK_USER = 418;
+const NETWORK_USER_TEXT = "Disconnected by client";
+
+// Settings for exponential backoff
+const _BOFF_BASE = 2000; // 2000 milliseconds, minimum delay between reconnects
+const _BOFF_MAX_ITER = 10; // Maximum delay between reconnects 2^10 * 2000 ~ 34 minutes
+const _BOFF_JITTER = 0.3; // Add random delay
+
+// Helper function for creating an endpoint URL.
+function makeBaseUrl(host, protocol, version, apiKey) {
+  let url = null;
+
+  if (['http', 'https', 'ws', 'wss'].includes(protocol)) {
+    url = `${protocol}://${host}`;
+    if (url.charAt(url.length - 1) !== '/') {
+      url += '/';
+    }
+    url += 'v' + version + '/channels';
+    if (['http', 'https'].includes(protocol)) {
+      // Long polling endpoint ends with "lp", i.e.
+      // '/v0/channels/lp' vs just '/v0/channels' for ws
+      url += '/lp';
+    }
+    url += '?apikey=' + apiKey;
+  }
+  return url;
+}
+
+/**
+ * An abstraction for a websocket or a long polling connection.
+ *
+ * @class Connection
+ * @memberof Tinode
+
+ * @param {Object} config - configuration parameters.
+ * @param {string} config.host - Host name and optional port number to connect to.
+ * @param {string} config.apiKey - API key generated by &lt;code>keygen&lt;/code>.
+ * @param {string} config.transport - Network transport to use, either &lt;code>"ws"&lt;code>/&lt;code>"wss"&lt;/code> for websocket or
+ *      &lt;code>lp&lt;/code> for long polling.
+ * @param {boolean} config.secure - Use Secure WebSocket if &lt;code>true&lt;/code>.
+ * @param {string} version_ - Major value of the protocol version, e.g. '0' in '0.17.1'.
+ * @param {boolean} autoreconnect_ - If connection is lost, try to reconnect automatically.
+ */
+export default class Connection {
+  // Logger, does nothing by default.
+  static #log = _ => {};
+
+  #boffTimer = null;
+  #boffIteration = 0;
+  #boffClosed = false; // Indicator if the socket was manually closed - don't autoreconnect if true.
+
+  // Websocket.
+  #socket = null;
+
+  host;
+  secure;
+  apiKey;
+
+  version;
+  autoreconnect;
+
+  initialized;
+
+  // (config.host, config.apiKey, config.transport, config.secure), PROTOCOL_VERSION, true
+  constructor(config, version_, autoreconnect_) {
+    this.host = config.host;
+    this.secure = config.secure;
+    this.apiKey = config.apiKey;
+
+    this.version = version_;
+    this.autoreconnect = autoreconnect_;
+
+    if (config.transport === 'lp') {
+      // explicit request to use long polling
+      this.#init_lp();
+      this.initialized = 'lp';
+    } else if (config.transport === 'ws') {
+      // explicit request to use web socket
+      // if websockets are not available, horrible things will happen
+      this.#init_ws();
+      this.initialized = 'ws';
+    }
+
+    if (!this.initialized) {
+      // Invalid or undefined network transport.
+      Connection.#log("Unknown or invalid network transport. Running under Node? Call 'Tinode.setNetworkProviders()'.");
+      throw new Error("Unknown or invalid network transport. Running under Node? Call 'Tinode.setNetworkProviders()'.");
+    }
+  }
+
+  /**
+   * To use Connection in a non browser context, supply WebSocket and XMLHttpRequest providers.
+   * @static
+   * @memberof Connection
+   * @param wsProvider WebSocket provider, e.g. for nodeJS , &lt;code>require('ws')&lt;/code>.
+   * @param xhrProvider XMLHttpRequest provider, e.g. for node &lt;code>require('xhr')&lt;/code>.
+   */
+  static setNetworkProviders(wsProvider, xhrProvider) {
+    WebSocketProvider = wsProvider;
+    XHRProvider = xhrProvider;
+  }
+
+  /**
+   * Assign a non-default logger.
+   * @static
+   * @memberof Connection
+   * @param {function} l variadic logging function.
+   */
+  static set logger(l) {
+    Connection.#log = l;
+  }
+
+  /**
+   * Initiate a new connection
+   * @memberof Tinode.Connection#
+   * @param {string} host_ Host name to connect to; if &lt;code>null&lt;/code> the old host name will be used.
+   * @param {boolean} force Force new connection even if one already exists.
+   * @return {Promise} Promise resolved/rejected when the connection call completes, resolution is called without
+   *  parameters, rejection passes the {Error} as parameter.
+   */
+  connect(host_, force) {
+    return Promise.reject(null);
+  }
+
+  /**
+   * Try to restore a network connection, also reset backoff.
+   * @memberof Tinode.Connection#
+   *
+   * @param {boolean} force - reconnect even if there is a live connection already.
+   */
+  reconnect(force) {}
+
+  /**
+   * Terminate the network connection
+   * @memberof Tinode.Connection#
+   */
+  disconnect() {}
+
+  /**
+   * Send a string to the server.
+   * @memberof Tinode.Connection#
+   *
+   * @param {string} msg - String to send.
+   * @throws Throws an exception if the underlying connection is not live.
+   */
+  sendText(msg) {}
+
+  /**
+   * Check if connection is alive.
+   * @memberof Tinode.Connection#
+   * @returns {boolean} &lt;code>true&lt;/code> if connection is live, &lt;code>false&lt;/code> otherwise.
+   */
+  isConnected() {
+    return false;
+  }
+
+  /**
+   * Get the name of the current network transport.
+   * @memberof Tinode.Connection#
+   * @returns {string} name of the transport such as &lt;code>"ws"&lt;/code> or &lt;code>"lp"&lt;/code>.
+   */
+  transport() {
+    return this.initialized;
+  }
+
+  /**
+   * Send network probe to check if connection is indeed live.
+   * @memberof Tinode.Connection#
+   */
+  probe() {
+    this.sendText('1');
+  }
+
+  /**
+   * Reset autoreconnect counter to zero.
+   * @memberof Tinode.Connection#
+   */
+  backoffReset() {
+    this.#boffReset();
+  }
+
+  // Backoff implementation - reconnect after a timeout.
+  #boffReconnect() {
+    // Clear timer
+    clearTimeout(this.#boffTimer);
+    // Calculate when to fire the reconnect attempt
+    const timeout = _BOFF_BASE * (Math.pow(2, this.#boffIteration) * (1.0 + _BOFF_JITTER * Math.random()));
+    // Update iteration counter for future use
+    this.#boffIteration = (this.#boffIteration >= _BOFF_MAX_ITER ? this.#boffIteration : this.#boffIteration + 1);
+    if (this.onAutoreconnectIteration) {
+      this.onAutoreconnectIteration(timeout);
+    }
+
+    this.#boffTimer = setTimeout(_ => {
+      Connection.#log(`Reconnecting, iter=${this.#boffIteration}, timeout=${timeout}`);
+      // Maybe the socket was closed while we waited for the timer?
+      if (!this.#boffClosed) {
+        const prom = this.connect();
+        if (this.onAutoreconnectIteration) {
+          this.onAutoreconnectIteration(0, prom);
+        } else {
+          // Suppress error if it's not used.
+          prom.catch(() => {
+            /* do nothing */
+          });
+        }
+      } else if (this.onAutoreconnectIteration) {
+        this.onAutoreconnectIteration(-1);
+      }
+    }, timeout);
+  }
+
+  // Terminate auto-reconnect process.
+  #boffStop() {
+    clearTimeout(this.#boffTimer);
+    this.#boffTimer = null;
+  }
+
+  // Reset auto-reconnect iteration counter.
+  #boffReset() {
+    this.#boffIteration = 0;
+  }
+
+  // Initialization for long polling.
+  #init_lp() {
+    const XDR_UNSENT = 0; // Client has been created. open() not called yet.
+    const XDR_OPENED = 1; // open() has been called.
+    const XDR_HEADERS_RECEIVED = 2; // send() has been called, and headers and status are available.
+    const XDR_LOADING = 3; // Downloading; responseText holds partial data.
+    const XDR_DONE = 4; // The operation is complete.
+
+    // Fully composed endpoint URL, with API key &amp; SID
+    let _lpURL = null;
+
+    let _poller = null;
+    let _sender = null;
+
+    let lp_sender = (url_) => {
+      const sender = new XHRProvider();
+      sender.onreadystatechange = (evt) => {
+        if (sender.readyState == XDR_DONE &amp;&amp; sender.status >= 400) {
+          // Some sort of error response
+          throw new Error(`LP sender failed, ${sender.status}`);
+        }
+      };
+
+      sender.open('POST', url_, true);
+      return sender;
+    }
+
+    let lp_poller = (url_, resolve, reject) => {
+      let poller = new XHRProvider();
+      let promiseCompleted = false;
+
+      poller.onreadystatechange = (evt) => {
+        if (poller.readyState == XDR_DONE) {
+          if (poller.status == 201) { // 201 == HTTP.Created, get SID
+            let pkt = JSON.parse(poller.responseText, jsonParseHelper);
+            _lpURL = url_ + '&amp;sid=' + pkt.ctrl.params.sid;
+            poller = lp_poller(_lpURL);
+            poller.send(null);
+            if (this.onOpen) {
+              this.onOpen();
+            }
+
+            if (resolve) {
+              promiseCompleted = true;
+              resolve();
+            }
+
+            if (this.autoreconnect) {
+              this.#boffStop();
+            }
+          } else if (poller.status &lt; 400) { // 400 = HTTP.BadRequest
+            if (this.onMessage) {
+              this.onMessage(poller.responseText);
+            }
+            poller = lp_poller(_lpURL);
+            poller.send(null);
+          } else {
+            // Don't throw an error here, gracefully handle server errors
+            if (reject &amp;&amp; !promiseCompleted) {
+              promiseCompleted = true;
+              reject(poller.responseText);
+            }
+            if (this.onMessage &amp;&amp; poller.responseText) {
+              this.onMessage(poller.responseText);
+            }
+            if (this.onDisconnect) {
+              const code = poller.status || (this.#boffClosed ? NETWORK_USER : NETWORK_ERROR);
+              const text = poller.responseText || (this.#boffClosed ? NETWORK_USER_TEXT : NETWORK_ERROR_TEXT);
+              this.onDisconnect(new Error(text + ' (' + code + ')'), code);
+            }
+
+            // Polling has stopped. Indicate it by setting poller to null.
+            poller = null;
+            if (!this.#boffClosed &amp;&amp; this.autoreconnect) {
+              this.#boffReconnect();
+            }
+          }
+        }
+      };
+      // Using POST to avoid caching response by service worker.
+      poller.open('POST', url_, true);
+      return poller;
+    }
+
+    this.connect = (host_, force) => {
+      this.#boffClosed = false;
+
+      if (_poller) {
+        if (!force) {
+          return Promise.resolve();
+        }
+        _poller.onreadystatechange = undefined;
+        _poller.abort();
+        _poller = null;
+      }
+
+      if (host_) {
+        this.host = host_;
+      }
+
+      return new Promise((resolve, reject) => {
+        const url = makeBaseUrl(this.host, this.secure ? 'https' : 'http', this.version, this.apiKey);
+        Connection.#log("LP connecting to:", url);
+        _poller = lp_poller(url, resolve, reject);
+        _poller.send(null);
+      }).catch((err) => {
+        Connection.#log("LP connection failed:", err);
+      });
+    };
+
+    this.reconnect = (force) => {
+      this.#boffStop();
+      this.connect(null, force);
+    };
+
+    this.disconnect = () => {
+      this.#boffClosed = true;
+      this.#boffStop();
+
+      if (_sender) {
+        _sender.onreadystatechange = undefined;
+        _sender.abort();
+        _sender = null;
+      }
+      if (_poller) {
+        _poller.onreadystatechange = undefined;
+        _poller.abort();
+        _poller = null;
+      }
+
+      if (this.onDisconnect) {
+        this.onDisconnect(new Error(NETWORK_USER_TEXT + ' (' + NETWORK_USER + ')'), NETWORK_USER);
+      }
+      // Ensure it's reconstructed
+      _lpURL = null;
+    };
+
+    this.sendText = (msg) => {
+      _sender = lp_sender(_lpURL);
+      if (_sender &amp;&amp; (_sender.readyState == XDR_OPENED)) { // 1 == OPENED
+        _sender.send(msg);
+      } else {
+        throw new Error("Long poller failed to connect");
+      }
+    };
+
+    this.isConnected = () => {
+      return (_poller &amp;&amp; true);
+    };
+  }
+
+  // Initialization for Websocket
+  #init_ws() {
+    this.connect = (host_, force) => {
+      this.#boffClosed = false;
+
+      if (this.#socket) {
+        if (!force &amp;&amp; this.#socket.readyState == this.#socket.OPEN) {
+          return Promise.resolve();
+        }
+        this.#socket.close();
+        this.#socket = null;
+      }
+
+      if (host_) {
+        this.host = host_;
+      }
+
+      return new Promise((resolve, reject) => {
+        const url = makeBaseUrl(this.host, this.secure ? 'wss' : 'ws', this.version, this.apiKey);
+
+        Connection.#log("WS connecting to: ", url);
+
+        // It throws when the server is not accessible but the exception cannot be caught:
+        // https://stackoverflow.com/questions/31002592/javascript-doesnt-catch-error-in-websocket-instantiation/31003057
+        const conn = new WebSocketProvider(url);
+
+        conn.onerror = (err) => {
+          reject(err);
+        };
+
+        conn.onopen = (evt) => {
+          if (this.autoreconnect) {
+            this.#boffStop();
+          }
+
+          if (this.onOpen) {
+            this.onOpen();
+          }
+
+          resolve();
+        };
+
+        conn.onclose = (evt) => {
+          this.#socket = null;
+
+          if (this.onDisconnect) {
+            const code = this.#boffClosed ? NETWORK_USER : NETWORK_ERROR;
+            this.onDisconnect(new Error(this.#boffClosed ? NETWORK_USER_TEXT : NETWORK_ERROR_TEXT +
+              ' (' + code + ')'), code);
+          }
+
+          if (!this.#boffClosed &amp;&amp; this.autoreconnect) {
+            this.#boffReconnect();
+          }
+        };
+
+        conn.onmessage = (evt) => {
+          if (this.onMessage) {
+            this.onMessage(evt.data);
+          }
+        };
+
+        this.#socket = conn;
+      });
+    }
+
+    this.reconnect = (force) => {
+      this.#boffStop();
+      this.connect(null, force);
+    };
+
+    this.disconnect = () => {
+      this.#boffClosed = true;
+      this.#boffStop();
+
+      if (!this.#socket) {
+        return;
+      }
+      this.#socket.close();
+      this.#socket = null;
+    };
+
+    this.sendText = (msg) => {
+      if (this.#socket &amp;&amp; (this.#socket.readyState == this.#socket.OPEN)) {
+        this.#socket.send(msg);
+      } else {
+        throw new Error("Websocket is not connected");
+      }
+    };
+
+    this.isConnected = () => {
+      return (this.#socket &amp;&amp; (this.#socket.readyState == this.#socket.OPEN));
+    };
+  }
+
+  // Callbacks:
+
+  /**
+   * A callback to pass incoming messages to. See {@link Tinode.Connection#onMessage}.
+   * @callback Tinode.Connection.OnMessage
+   * @memberof Tinode.Connection
+   * @param {string} message - Message to process.
+   */
+  onMessage = undefined;
+
+  /**
+   * A callback for reporting a dropped connection.
+   * @type {function}
+   * @memberof Tinode.Connection#
+   */
+  onDisconnect = undefined;
+
+  /**
+   * A callback called when the connection is ready to be used for sending. For websockets it's socket open,
+   * for long polling it's &lt;code>readyState=1&lt;/code> (OPENED)
+   * @type {function}
+   * @memberof Tinode.Connection#
+   */
+  onOpen = undefined;
+
+  /**
+   * A callback to notify of reconnection attempts. See {@link Tinode.Connection#onAutoreconnectIteration}.
+   * @memberof Tinode.Connection
+   * @callback AutoreconnectIterationType
+   * @param {string} timeout - time till the next reconnect attempt in milliseconds. &lt;code>-1&lt;/code> means reconnect was skipped.
+   * @param {Promise} promise resolved or rejected when the reconnect attemp completes.
+   *
+   */
+  /**
+   * A callback to inform when the next attampt to reconnect will happen and to receive connection promise.
+   * @memberof Tinode.Connection#
+   * @type {Tinode.Connection.AutoreconnectIterationType}
+   */
+  onAutoreconnectIteration = undefined;
+}
+
+Connection.NETWORK_ERROR = NETWORK_ERROR;
+Connection.NETWORK_ERROR_TEXT = NETWORK_ERROR_TEXT;
+Connection.NETWORK_USER = NETWORK_USER;
+Connection.NETWORK_USER_TEXT = NETWORK_USER_TEXT;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Sat Jun 18 2022 15:55:06 GMT-0700 (Pacific Daylight Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

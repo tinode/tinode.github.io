@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>db.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Drafty.html">Drafty</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.append">append</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendAudio">appendAudio</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendButton">appendButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendImage">appendImage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendLineBreak">appendLineBreak</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendLink">appendLink</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachFile">attachFile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachJSON">attachJSON</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachments">attachments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attrValue">attrValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.entities">entities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.format">format</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.forwardedContent">forwardedContent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getContentType">getContentType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getDownloadUrl">getDownloadUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getEntityMimeType">getEntityMimeType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getEntitySize">getEntitySize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getPreviewUrl">getPreviewUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.hasAttachments">hasAttachments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.hasEntities">hasEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertAudio">insertAudio</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertButton">insertButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertImage">insertImage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isPlainText">isPlainText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isProcessing">isProcessing</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isValid">isValid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.mention">mention</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.parse">parse</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.preview">preview</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.quote">quote</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.replyContent">replyContent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.sanitizeEntities">sanitizeEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.shorten">shorten</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.tagName">tagName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.toPlainText">toPlainText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.updateVideoEnt">updateVideoEnt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.videoCall">videoCall</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.wrapAsForm">wrapAsForm</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.wrapInto">wrapInto</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.html">Tinode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.credential">credential</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.diff">diff</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.getLibrary">getLibrary</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.getVersion">getVersion</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isChannelTopicName">isChannelTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isCommTopicName">isCommTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isGroupTopicName">isGroupTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isMeTopicName">isMeTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isNewGroupTopicName">isNewGroupTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isNullValue">isNullValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isP2PTopicName">isP2PTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isRelativeURL">isRelativeURL</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.setDatabaseProvider">setDatabaseProvider</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.setNetworkProviders">setNetworkProviders</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.topicType">topicType</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.AccessMode.html">AccessMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.decode">decode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.encode">encode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getExcessive">getExcessive</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getGiven">getGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getMissing">getMissing</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getMode">getMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getWant">getWant</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isAdmin">isAdmin</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isApprover">isApprover</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isDeleter">isDeleter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isJoiner">isJoiner</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isMuted">isMuted</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isOwner">isOwner</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isPresencer">isPresencer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isReader">isReader</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isSharer">isSharer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isWriter">isWriter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setGiven">setGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setMode">setMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setWant">setWant</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.update">update</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateAll">updateAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateGiven">updateGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateMode">updateMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateWant">updateWant</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.CBuffer.html">CBuffer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#delAt">delAt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#delRange">delRange</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#filter">filter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#find">find</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#forEach">forEach</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#getAt">getAt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#getLast">getLast</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#length">length</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#put">put</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#reset">reset</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.Connection.html">Connection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#backoffReset">backoffReset</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#connect">connect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#disconnect">disconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#isConnected">isConnected</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#probe">probe</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#reconnect">reconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#sendText">sendText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#transport">transport</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.exports.TopicFnd.html">exports.TopicFnd</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.exports.TopicMe.html">exports.TopicMe</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html">MetaGetBuilder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#build">build</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#extract">extract</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withCred">withCred</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withData">withData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withDel">withDel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withDesc">withDesc</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withEarlierData">withEarlierData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterData">withLaterData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterDel">withLaterDel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterDesc">withLaterDesc</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterOneSub">withLaterOneSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterSub">withLaterSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withOneSub">withOneSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withSub">withSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withTags">withTags</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.module.exports.html">module.exports</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.Topic.html">Topic</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#deleteDatabase">deleteDatabase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#initDatabase">initDatabase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#jsonHelper">jsonHelper</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toString">toString</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">db.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @file Helper methods for dealing with IndexedDB cache of messages, users, and topics.
+ *
+ * @copyright 2015-2022 Tinode LLC.
+ */
+'use strict';
+
+// NOTE TO DEVELOPERS:
+// Localizable strings should be double quoted "строка на другом языке",
+// non-localizable strings should be single quoted 'non-localized'.
+
+const DB_VERSION = 1;
+const DB_NAME = 'tinode-web';
+
+let IDBProvider;
+
+export default class DB {
+  #onError = _ => {};
+  #logger = _ => {};
+
+  // Instance of IndexDB.
+  db = null;
+  // Indicator that the cache is disabled.
+  disabled = false;
+
+  constructor(onError, logger) {
+    this.#onError = onError || this.#onError;
+    this.#logger = logger || this.#logger;
+  }
+
+  #mapObjects(source, callback, context) {
+    if (!this.db) {
+      return disabled ?
+        Promise.resolve([]) :
+        Promise.reject(new Error("not initialized"));
+    }
+
+    return new Promise((resolve, reject) => {
+      const trx = this.db.transaction([source]);
+      trx.onerror = (event) => {
+        this.#logger('PCache', 'mapObjects', source, event.target.error);
+        reject(event.target.error);
+      };
+      trx.objectStore(source).getAll().onsuccess = (event) => {
+        if (callback) {
+          event.target.result.forEach((topic) => {
+            callback.call(context, topic);
+          });
+        }
+        resolve(event.target.result);
+      };
+    });
+  }
+
+  /**
+   * Initialize persistent cache: open or create/upgrade if needed.
+   * @returns {Promise} promise to be resolved/rejected when the DB is initialized.
+   */
+  initDatabase() {
+    return new Promise((resolve, reject) => {
+      // Open the database and initialize callbacks.
+      const req = IDBProvider.open(DB_NAME, DB_VERSION);
+      req.onsuccess = (event) => {
+        this.db = event.target.result;
+        this.disabled = false;
+        resolve(this.db);
+      };
+      req.onerror = (event) => {
+        this.#logger('PCache', "failed to initialize", event);
+        reject(event.target.error);
+        this.#onError(event.target.error);
+      };
+      req.onupgradeneeded = function(event) {
+        this.db = event.target.result;
+
+        this.db.onerror = function(event) {
+          this.#logger('PCache', "failed to create storage", event);
+          this.#onError(event.target.error);
+        };
+
+        // Individual object stores.
+        // Object store (table) for topics. The primary key is topic name.
+        this.db.createObjectStore('topic', {
+          keyPath: 'name'
+        });
+
+        // Users object store. UID is the primary key.
+        this.db.createObjectStore('user', {
+          keyPath: 'uid'
+        });
+
+        // Subscriptions object store topic &lt;-> user. Topic name + UID is the primary key.
+        this.db.createObjectStore('subscription', {
+          keyPath: ['topic', 'uid']
+        });
+
+        // Messages object store. The primary key is topic name + seq.
+        this.db.createObjectStore('message', {
+          keyPath: ['topic', 'seq']
+        });
+      };
+    });
+  }
+
+  /**
+   * Delete persistent cache.
+   */
+  deleteDatabase() {
+    // Close connection, otherwise operations will fail with 'onblocked'.
+    if (this.db) {
+      this.db.close();
+      this.db = null;
+    }
+    return new Promise((resolve, reject) => {
+      const req = IDBProvider.deleteDatabase(DB_NAME);
+      req.onblocked = function(event) {
+        if (this.db) {
+          this.db.close();
+        }
+        const err = new Error("blocked");
+        this.#logger('PCache', 'deleteDatabase', err);
+        reject(err);
+      };
+      req.onsuccess = (event) => {
+        this.db = null;
+        this.disabled = true;
+        resolve(true);
+      };
+      req.onerror = (event) => {
+        this.#logger('PCache', 'deleteDatabase', event.target.error);
+        reject(event.target.error);
+      };
+    });
+  }
+
+  /**
+   * Check if persistent cache is ready for use.
+   * @memberOf DB
+   * @returns {boolean} &lt;code>true&lt;/code> if cache is ready, &lt;code>false&lt;/code> otherwise.
+   */
+  isReady() {
+    return !!this.db;
+  }
+
+  // Topics.
+
+  /**
+   * Save to cache or update topic in persistent cache.
+   * @memberOf DB
+   * @param {Topic} topic - topic to be added or updated.
+   * @returns {Promise} promise resolved/rejected on operation completion.
+   */
+  updTopic(topic) {
+    if (!this.isReady()) {
+      return this.disabled ?
+        Promise.resolve() :
+        Promise.reject(new Error("not initialized"));
+    }
+    return new Promise((resolve, reject) => {
+      const trx = this.db.transaction(['topic'], 'readwrite');
+      trx.oncomplete = (event) => {
+        resolve(event.target.result);
+      };
+      trx.onerror = (event) => {
+        this.#logger('PCache', 'updTopic', event.target.error);
+        reject(event.target.error);
+      };
+      const req = trx.objectStore('topic').get(topic.name);
+      req.onsuccess = (event) => {
+        trx.objectStore('topic').put(DB.#serializeTopic(req.result, topic));
+        trx.commit();
+      };
+    });
+  }
+
+  /**
+   * Mark or unmark topic as deleted.
+   * @memberOf DB
+   * @param {string} name - name of the topic to mark or unmark.
+   * @return {Promise} promise resolved/rejected on operation completion.
+   */
+  markTopicAsDeleted(name) {
+    if (!this.isReady()) {
+      return this.disabled ?
+        Promise.resolve() :
+        Promise.reject(new Error("not initialized"));
+    }
+    return new Promise((resolve, reject) => {
+      const trx = this.db.transaction(['topic'], 'readwrite');
+      trx.oncomplete = (event) => {
+        resolve(event.target.result);
+      };
+      trx.onerror = (event) => {
+        this.#logger('PCache', 'markTopicAsDeleted', event.target.error);
+        reject(event.target.error);
+      };
+      const req = trx.objectStore('topic').get(name);
+      req.onsuccess = (event) => {
+        const topic = event.target.result;
+        topic._deleted = true;
+        trx.objectStore('topic').put(topic);
+        trx.commit();
+      };
+    });
+  }
+
+  /**
+   * Remove topic from persistent cache.
+   * @memberOf DB
+   * @param {string} name - name of the topic to remove from database.
+   * @return {Promise} promise resolved/rejected on operation completion.
+   */
+  remTopic(name) {
+    if (!this.isReady()) {
+      return this.disabled ?
+        Promise.resolve() :
+        Promise.reject(new Error("not initialized"));
+    }
+    return new Promise((resolve, reject) => {
+      const trx = this.db.transaction(['topic', 'subscription', 'message'], 'readwrite');
+      trx.oncomplete = (event) => {
+        resolve(event.target.result);
+      };
+      trx.onerror = (event) => {
+        this.#logger('PCache', 'remTopic', event.target.error);
+        reject(event.target.error);
+      };
+      trx.objectStore('topic').delete(IDBKeyRange.only(name));
+      trx.objectStore('subscription').delete(IDBKeyRange.bound([name, '-'], [name, '~']));
+      trx.objectStore('message').delete(IDBKeyRange.bound([name, 0], [name, Number.MAX_SAFE_INTEGER]));
+      trx.commit();
+    });
+  }
+
+  /**
+   * Execute a callback for each stored topic.
+   * @memberOf DB
+   * @param {function} callback - function to call for each topic.
+   * @param {Object} context - the value or &lt;code>this&lt;/code> inside the callback.
+   * @return {Promise} promise resolved/rejected on operation completion.
+   */
+  mapTopics(callback, context) {
+    return this.#mapObjects('topic', callback, context);
+  }
+
+  /**
+   * Copy data from serialized object to topic.
+   * @memberOf DB
+   * @param {Topic} topic - target to deserialize to.
+   * @param {Object} src - serialized data to copy from.
+   */
+  deserializeTopic(topic, src) {
+    DB.#deserializeTopic(topic, src);
+  }
+
+  // Users.
+  /**
+   * Add or update user object in the persistent cache.
+   * @memberOf DB
+   * @param {string} uid - ID of the user to save or update.
+   * @param {Object} pub - user's &lt;code>public&lt;/code> information.
+   * @returns {Promise} promise resolved/rejected on operation completion.
+   */
+  updUser(uid, pub) {
+    if (arguments.length &lt; 2 || pub === undefined) {
+      // No point inupdating user with invalid data.
+      return;
+    }
+    if (!this.isReady()) {
+      return this.disabled ?
+        Promise.resolve() :
+        Promise.reject(new Error("not initialized"));
+    }
+    return new Promise((resolve, reject) => {
+      const trx = this.db.transaction(['user'], 'readwrite');
+      trx.oncomplete = (event) => {
+        resolve(event.target.result);
+      };
+      trx.onerror = (event) => {
+        this.#logger('PCache', 'updUser', event.target.error);
+        reject(event.target.error);
+      };
+      trx.objectStore('user').put({
+        uid: uid,
+        public: pub
+      });
+      trx.commit();
+    });
+  }
+
+  /**
+   * Remove user from persistent cache.
+   * @memberOf DB
+   * @param {string} uid - ID of the user to remove from the cache.
+   * @return {Promise} promise resolved/rejected on operation completion.
+   */
+  remUser(uid) {
+    if (!this.isReady()) {
+      return this.disabled ?
+        Promise.resolve() :
+        Promise.reject(new Error("not initialized"));
+    }
+    return new Promise((resolve, reject) => {
+      const trx = this.db.transaction(['user'], 'readwrite');
+      trx.oncomplete = (event) => {
+        resolve(event.target.result);
+      };
+      trx.onerror = (event) => {
+        this.#logger('PCache', 'remUser', event.target.error);
+        reject(event.target.error);
+      };
+      trx.objectStore('user').delete(IDBKeyRange.only(uid));
+      trx.commit();
+    });
+  }
+
+  /**
+   * Execute a callback for each stored user.
+   * @memberOf DB
+   * @param {function} callback - function to call for each topic.
+   * @param {Object} context - the value or &lt;code>this&lt;/code> inside the callback.
+   * @return {Promise} promise resolved/rejected on operation completion.
+   */
+  mapUsers(callback, context) {
+    return this.#mapObjects('user', callback, context);
+  }
+
+  /**
+   * Read a single user from persistent cache.
+   * @memberOf DB
+   * @param {string} uid - ID of the user to fetch from cache.
+   * @return {Promise} promise resolved/rejected on operation completion.
+   */
+  getUser(uid) {
+    if (!this.isReady()) {
+      return this.disabled ?
+        Promise.resolve() :
+        Promise.reject(new Error("not initialized"));
+    }
+    return new Promise((resolve, reject) => {
+      const trx = this.db.transaction(['user']);
+      trx.oncomplete = (event) => {
+        const user = event.target.result;
+        resolve({
+          user: user.uid,
+          public: user.public
+        });
+      };
+      trx.onerror = (event) => {
+        this.#logger('PCache', 'getUser', event.target.error);
+        reject(event.target.error);
+      };
+      trx.objectStore('user').get(uid);
+    });
+  }
+
+  // Subscriptions.
+  /**
+   * Add or update subscription in persistent cache.
+   * @memberOf DB
+   * @param {string} topicName - name of the topic which owns the message.
+   * @param {string} uid - ID of the subscribed user.
+   * @param {Object} sub - subscription to save.
+   * @return {Promise} promise resolved/rejected on operation completion.
+   */
+  updSubscription(topicName, uid, sub) {
+    if (!this.isReady()) {
+      return this.disabled ?
+        Promise.resolve() :
+        Promise.reject(new Error("not initialized"));
+    }
+    return new Promise((resolve, reject) => {
+      const trx = this.db.transaction(['subscription'], 'readwrite');
+      trx.oncomplete = (event) => {
+        resolve(event.target.result);
+      };
+      trx.onerror = (event) => {
+        this.#logger('PCache', 'updSubscription', event.target.error);
+        reject(event.target.error);
+      };
+      trx.objectStore('subscription').get([topicName, uid]).onsuccess = (event) => {
+        trx.objectStore('subscription').put(DB.#serializeSubscription(event.target.result, topicName, uid, sub));
+        trx.commit();
+      };
+    });
+  }
+
+  /**
+   * Execute a callback for each cached subscription in a given topic.
+   * @memberOf DB
+   * @param {string} topicName - name of the topic which owns the subscriptions.
+   * @param {function} callback - function to call for each subscription.
+   * @param {Object} context - the value or &lt;code>this&lt;/code> inside the callback.
+   * @return {Promise} promise resolved/rejected on operation completion.
+   */
+  mapSubscriptions(topicName, callback, context) {
+    if (!this.isReady()) {
+      return this.disabled ?
+        Promise.resolve([]) :
+        Promise.reject(new Error("not initialized"));
+    }
+    return new Promise((resolve, reject) => {
+      const trx = this.db.transaction(['subscription']);
+      trx.onerror = (event) => {
+        this.#logger('PCache', 'mapSubscriptions', event.target.error);
+        reject(event.target.error);
+      };
+      trx.objectStore('subscription').getAll(IDBKeyRange.bound([topicName, '-'], [topicName, '~'])).onsuccess = (event) => {
+        if (callback) {
+          event.target.result.forEach((topic) => {
+            callback.call(context, topic);
+          });
+        }
+        resolve(event.target.result);
+      };
+    });
+  }
+
+  // Messages.
+
+  /**
+   * Save message to persistent cache.
+   * @memberOf DB
+   * @param {string} topicName - name of the topic which owns the message.
+   * @param {Object} msg - message to save.
+   * @return {Promise} promise resolved/rejected on operation completion.
+   */
+  addMessage(msg) {
+    if (!this.isReady()) {
+      return this.disabled ?
+        Promise.resolve() :
+        Promise.reject(new Error("not initialized"));
+    }
+    return new Promise((resolve, reject) => {
+      const trx = this.db.transaction(['message'], 'readwrite');
+      trx.onsuccess = (event) => {
+        resolve(event.target.result);
+      };
+      trx.onerror = (event) => {
+        this.#logger('PCache', 'addMessage', event.target.error);
+        reject(event.target.error);
+      };
+      trx.objectStore('message').add(DB.#serializeMessage(null, msg));
+      trx.commit();
+    });
+  }
+
+  /**
+   * Update delivery status of a message stored in persistent cache.
+   * @memberOf DB
+   * @param {string} topicName - name of the topic which owns the message.
+   * @param {number} seq - ID of the message to update
+   * @param {number} status - new delivery status of the message.
+   * @return {Promise} promise resolved/rejected on operation completion.
+   */
+  updMessageStatus(topicName, seq, status) {
+    if (!this.isReady()) {
+      return this.disabled ?
+        Promise.resolve() :
+        Promise.reject(new Error("not initialized"));
+    }
+    return new Promise((resolve, reject) => {
+      const trx = this.db.transaction(['message'], 'readwrite');
+      trx.onsuccess = (event) => {
+        resolve(event.target.result);
+      };
+      trx.onerror = (event) => {
+        this.#logger('PCache', 'updMessageStatus', event.target.error);
+        reject(event.target.error);
+      };
+      const req = trx.objectStore('message').get(IDBKeyRange.only([topicName, seq]));
+      req.onsuccess = (event) => {
+        const src = req.result || event.target.result;
+        if (!src || src._status == status) {
+          trx.commit();
+          return;
+        }
+        trx.objectStore('message').put(DB.#serializeMessage(src, {
+          topic: topicName,
+          seq: seq,
+          _status: status
+        }));
+        trx.commit();
+      };
+    });
+  }
+
+  /**
+   * Remove one or more messages from persistent cache.
+   * @memberOf DB
+   * @param {string} topicName - name of the topic which owns the message.
+   * @param {number} from - id of the message to remove or lower boundary when removing range (inclusive).
+   * @param {number=} to - upper boundary (exclusive) when removing a range of messages.
+   * @return {Promise} promise resolved/rejected on operation completion.
+   */
+  remMessages(topicName, from, to) {
+    if (!this.isReady()) {
+      return this.disabled ?
+        Promise.resolve() :
+        Promise.reject(new Error("not initialized"));
+    }
+    return new Promise((resolve, reject) => {
+      if (!from &amp;&amp; !to) {
+        from = 0;
+        to = Number.MAX_SAFE_INTEGER;
+      }
+      const range = to > 0 ? IDBKeyRange.bound([topicName, from], [topicName, to], false, true) :
+        IDBKeyRange.only([topicName, from]);
+      const trx = this.db.transaction(['message'], 'readwrite');
+      trx.onsuccess = (event) => {
+        resolve(event.target.result);
+      };
+      trx.onerror = (event) => {
+        this.#logger('PCache', 'remMessages', event.target.error);
+        reject(event.target.error);
+      };
+      trx.objectStore('message').delete(range);
+      trx.commit();
+    });
+  }
+
+  /**
+   * Retrieve messages from persistent store.
+   * @memberOf DB
+   * @param {string} topicName - name of the topic to retrieve messages from.
+   * @param {function} callback to call for each retrieved message.
+   * @param {Object} query - parameters of the message range to retrieve.
+   * @param {number=} query.since - the least message ID to retrieve (inclusive).
+   * @param {number=} query.before - the greatest message ID to retrieve (exclusive).
+   * @param {number=} query.limit - the maximum number of messages to retrieve.
+   * @return {Promise} promise resolved/rejected on operation completion.
+   */
+  readMessages(topicName, query, callback, context) {
+    if (!this.isReady()) {
+      return this.disabled ?
+        Promise.resolve([]) :
+        Promise.reject(new Error("not initialized"));
+    }
+    return new Promise((resolve, reject) => {
+      query = query || {};
+      const since = query.since > 0 ? query.since : 0;
+      const before = query.before > 0 ? query.before : Number.MAX_SAFE_INTEGER;
+      const limit = query.limit | 0;
+
+      const result = [];
+      const range = IDBKeyRange.bound([topicName, since], [topicName, before], false, true);
+      const trx = this.db.transaction(['message']);
+      trx.onerror = (event) => {
+        this.#logger('PCache', 'readMessages', event.target.error);
+        reject(event.target.error);
+      };
+      // Iterate in descending order.
+      trx.objectStore('message').openCursor(range, 'prev').onsuccess = (event) => {
+        const cursor = event.target.result;
+        if (cursor) {
+          if (callback) {
+            callback.call(context, cursor.value);
+          }
+          result.push(cursor.value);
+          if (limit &lt;= 0 || result.length &lt; limit) {
+            cursor.continue();
+          } else {
+            resolve(result);
+          }
+        } else {
+          resolve(result);
+        }
+      };
+    });
+  }
+
+  // Private methods.
+
+  // Serializable topic fields.
+  static #topic_fields = ['created', 'updated', 'deleted', 'read', 'recv', 'seq', 'clear', 'defacs',
+    'creds', 'public', 'trusted', 'private', 'touched', '_deleted'
+  ];
+
+  // Copy data from src to Topic object.
+  static #deserializeTopic(topic, src) {
+    DB.#topic_fields.forEach((f) => {
+      if (src.hasOwnProperty(f)) {
+        topic[f] = src[f];
+      }
+    });
+    if (Array.isArray(src.tags)) {
+      topic._tags = src.tags;
+    }
+    if (src.acs) {
+      topic.setAccessMode(src.acs);
+    }
+    topic.seq |= 0;
+    topic.read |= 0;
+    topic.unread = Math.max(0, topic.seq - topic.read);
+  }
+
+  // Copy values from 'src' to 'dst'. Allocate dst if it's null or undefined.
+  static #serializeTopic(dst, src) {
+    const res = dst || {
+      name: src.name
+    };
+    DB.#topic_fields.forEach((f) => {
+      if (src.hasOwnProperty(f)) {
+        res[f] = src[f];
+      }
+    });
+    if (Array.isArray(src._tags)) {
+      res.tags = src._tags;
+    }
+    if (src.acs) {
+      res.acs = src.getAccessMode().jsonHelper();
+    }
+    return res;
+  }
+
+  static #serializeSubscription(dst, topicName, uid, sub) {
+    const fields = ['updated', 'mode', 'read', 'recv', 'clear', 'lastSeen', 'userAgent'];
+    const res = dst || {
+      topic: topicName,
+      uid: uid
+    };
+
+    fields.forEach((f) => {
+      if (sub.hasOwnProperty(f)) {
+        res[f] = sub[f];
+      }
+    });
+
+    return res;
+  }
+
+  static #serializeMessage(dst, msg) {
+    // Serializable fields.
+    const fields = ['topic', 'seq', 'ts', '_status', 'from', 'head', 'content'];
+    const res = dst || {};
+    fields.forEach((f) => {
+      if (msg.hasOwnProperty(f)) {
+        res[f] = msg[f];
+      }
+    });
+    return res;
+  }
+
+  /**
+   * To use DB in a non browser context, supply indexedDB provider.
+   * @static
+   * @memberof DB
+   * @param idbProvider indexedDB provider, e.g. for node &lt;code>require('fake-indexeddb')&lt;/code>.
+   */
+  static setDatabaseProvider(idbProvider) {
+    IDBProvider = idbProvider;
+  }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Sat Jun 18 2022 15:55:06 GMT-0700 (Pacific Daylight Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

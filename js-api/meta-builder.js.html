@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>meta-builder.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Drafty.html">Drafty</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.append">append</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendAudio">appendAudio</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendButton">appendButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendImage">appendImage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendLineBreak">appendLineBreak</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendLink">appendLink</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachFile">attachFile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachJSON">attachJSON</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachments">attachments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attrValue">attrValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.entities">entities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.format">format</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.forwardedContent">forwardedContent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getContentType">getContentType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getDownloadUrl">getDownloadUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getEntityMimeType">getEntityMimeType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getEntitySize">getEntitySize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getPreviewUrl">getPreviewUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.hasAttachments">hasAttachments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.hasEntities">hasEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertAudio">insertAudio</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertButton">insertButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertImage">insertImage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isPlainText">isPlainText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isProcessing">isProcessing</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isValid">isValid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.mention">mention</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.parse">parse</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.preview">preview</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.quote">quote</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.replyContent">replyContent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.sanitizeEntities">sanitizeEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.shorten">shorten</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.tagName">tagName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.toPlainText">toPlainText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.updateVideoEnt">updateVideoEnt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.videoCall">videoCall</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.wrapAsForm">wrapAsForm</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.wrapInto">wrapInto</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.html">Tinode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.credential">credential</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.diff">diff</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.getLibrary">getLibrary</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.getVersion">getVersion</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isChannelTopicName">isChannelTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isCommTopicName">isCommTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isGroupTopicName">isGroupTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isMeTopicName">isMeTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isNewGroupTopicName">isNewGroupTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isNullValue">isNullValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isP2PTopicName">isP2PTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isRelativeURL">isRelativeURL</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.setDatabaseProvider">setDatabaseProvider</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.setNetworkProviders">setNetworkProviders</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.topicType">topicType</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.AccessMode.html">AccessMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.decode">decode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.encode">encode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getExcessive">getExcessive</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getGiven">getGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getMissing">getMissing</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getMode">getMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getWant">getWant</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isAdmin">isAdmin</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isApprover">isApprover</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isDeleter">isDeleter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isJoiner">isJoiner</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isMuted">isMuted</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isOwner">isOwner</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isPresencer">isPresencer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isReader">isReader</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isSharer">isSharer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isWriter">isWriter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setGiven">setGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setMode">setMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setWant">setWant</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.update">update</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateAll">updateAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateGiven">updateGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateMode">updateMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateWant">updateWant</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.CBuffer.html">CBuffer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#delAt">delAt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#delRange">delRange</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#filter">filter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#find">find</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#forEach">forEach</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#getAt">getAt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#getLast">getLast</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#length">length</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#put">put</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#reset">reset</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.Connection.html">Connection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#backoffReset">backoffReset</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#connect">connect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#disconnect">disconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#isConnected">isConnected</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#probe">probe</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#reconnect">reconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#sendText">sendText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#transport">transport</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.exports.TopicFnd.html">exports.TopicFnd</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.exports.TopicMe.html">exports.TopicMe</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html">MetaGetBuilder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#build">build</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#extract">extract</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withCred">withCred</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withData">withData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withDel">withDel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withDesc">withDesc</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withEarlierData">withEarlierData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterData">withLaterData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterDel">withLaterDel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterDesc">withLaterDesc</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterOneSub">withLaterOneSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterSub">withLaterSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withOneSub">withOneSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withSub">withSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withTags">withTags</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.module.exports.html">module.exports</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.Topic.html">Topic</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#deleteDatabase">deleteDatabase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#initDatabase">initDatabase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#jsonHelper">jsonHelper</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toString">toString</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">meta-builder.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @file Helper class for constructing {@link Tinode.GetQuery}.
+ *
+ * @copyright 2015-2022 Tinode LLC.
+ */
+'use strict';
+
+/**
+ * Helper class for constructing {@link Tinode.GetQuery}.
+ *
+ * @class MetaGetBuilder
+ * @memberof Tinode
+ *
+ * @param {Tinode.Topic} parent topic which instantiated this builder.
+ */
+export default class MetaGetBuilder {
+  constructor(parent) {
+    this.topic = parent;
+    this.what = {};
+  }
+
+  // Get timestamp of the most recent desc update.
+  #get_desc_ims() {
+    return this.topic.updated;
+  }
+
+  // Get timestamp of the most recent subs update.
+  #get_subs_ims() {
+    if (this.topic.isP2PType()) {
+      return this.#get_desc_ims();
+    }
+    return this.topic._lastSubsUpdate;
+  }
+  /**
+   * Add query parameters to fetch messages within explicit limits.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @param {number=} since - messages newer than this (inclusive);
+   * @param {number=} before - older than this (exclusive)
+   * @param {number=} limit - number of messages to fetch
+   * @returns {Tinode.MetaGetBuilder} &lt;code>this&lt;/code> object.
+   */
+  withData(since, before, limit) {
+    this.what['data'] = {
+      since: since,
+      before: before,
+      limit: limit
+    };
+    return this;
+  }
+  /**
+   * Add query parameters to fetch messages newer than the latest saved message.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @param {number=} limit - number of messages to fetch
+   *
+   * @returns {Tinode.MetaGetBuilder} &lt;code>this&lt;/code> object.
+   */
+  withLaterData(limit) {
+    return this.withData(this.topic._maxSeq > 0 ? this.topic._maxSeq + 1 : undefined, undefined, limit);
+  }
+  /**
+   * Add query parameters to fetch messages older than the earliest saved message.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @param {number=} limit - maximum number of messages to fetch.
+   *
+   * @returns {Tinode.MetaGetBuilder} &lt;code>this&lt;/code> object.
+   */
+  withEarlierData(limit) {
+    return this.withData(undefined, this.topic._minSeq > 0 ? this.topic._minSeq : undefined, limit);
+  }
+  /**
+   * Add query parameters to fetch topic description if it's newer than the given timestamp.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @param {Date=} ims - fetch messages newer than this timestamp.
+   *
+   * @returns {Tinode.MetaGetBuilder} &lt;code>this&lt;/code> object.
+   */
+  withDesc(ims) {
+    this.what['desc'] = {
+      ims: ims
+    };
+    return this;
+  }
+  /**
+   * Add query parameters to fetch topic description if it's newer than the last update.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @returns {Tinode.MetaGetBuilder} &lt;code>this&lt;/code> object.
+   */
+  withLaterDesc() {
+    return this.withDesc(this.#get_desc_ims());
+  }
+  /**
+   * Add query parameters to fetch subscriptions.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @param {Date=} ims - fetch subscriptions modified more recently than this timestamp
+   * @param {number=} limit - maximum number of subscriptions to fetch.
+   * @param {string=} userOrTopic - user ID or topic name to fetch for fetching one subscription.
+   *
+   * @returns {Tinode.MetaGetBuilder} &lt;code>this&lt;/code> object.
+   */
+  withSub(ims, limit, userOrTopic) {
+    const opts = {
+      ims: ims,
+      limit: limit
+    };
+    if (this.topic.getType() == 'me') {
+      opts.topic = userOrTopic;
+    } else {
+      opts.user = userOrTopic;
+    }
+    this.what['sub'] = opts;
+    return this;
+  }
+  /**
+   * Add query parameters to fetch a single subscription.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @param {Date=} ims - fetch subscriptions modified more recently than this timestamp
+   * @param {string=} userOrTopic - user ID or topic name to fetch for fetching one subscription.
+   *
+   * @returns {Tinode.MetaGetBuilder} &lt;code>this&lt;/code> object.
+   */
+  withOneSub(ims, userOrTopic) {
+    return this.withSub(ims, undefined, userOrTopic);
+  }
+  /**
+   * Add query parameters to fetch a single subscription if it's been updated since the last update.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @param {string=} userOrTopic - user ID or topic name to fetch for fetching one subscription.
+   *
+   * @returns {Tinode.MetaGetBuilder} &lt;code>this&lt;/code> object.
+   */
+  withLaterOneSub(userOrTopic) {
+    return this.withOneSub(this.topic._lastSubsUpdate, userOrTopic);
+  }
+  /**
+   * Add query parameters to fetch subscriptions updated since the last update.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @param {number=} limit - maximum number of subscriptions to fetch.
+   *
+   * @returns {Tinode.MetaGetBuilder} &lt;code>this&lt;/code> object.
+   */
+  withLaterSub(limit) {
+    return this.withSub(this.#get_subs_ims(), limit);
+  }
+  /**
+   * Add query parameters to fetch topic tags.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @returns {Tinode.MetaGetBuilder} &lt;code>this&lt;/code> object.
+   */
+  withTags() {
+    this.what['tags'] = true;
+    return this;
+  }
+  /**
+   * Add query parameters to fetch user's credentials. &lt;code>'me'&lt;/code> topic only.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @returns {Tinode.MetaGetBuilder} &lt;code>this&lt;/code> object.
+   */
+  withCred() {
+    if (this.topic.getType() == 'me') {
+      this.what['cred'] = true;
+    } else {
+      this.topic._tinode.logger("ERROR: Invalid topic type for MetaGetBuilder:withCreds", this.topic.getType());
+    }
+    return this;
+  }
+  /**
+   * Add query parameters to fetch deleted messages within explicit limits. Any/all parameters can be null.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @param {number=} since - ids of messages deleted since this 'del' id (inclusive)
+   * @param {number=} limit - number of deleted message ids to fetch
+   *
+   * @returns {Tinode.MetaGetBuilder} &lt;code>this&lt;/code> object.
+   */
+  withDel(since, limit) {
+    if (since || limit) {
+      this.what['del'] = {
+        since: since,
+        limit: limit
+      };
+    }
+    return this;
+  }
+  /**
+   * Add query parameters to fetch messages deleted after the saved &lt;code>'del'&lt;/code> id.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @param {number=} limit - number of deleted message ids to fetch
+   *
+   * @returns {Tinode.MetaGetBuilder} &lt;code>this&lt;/code> object.
+   */
+  withLaterDel(limit) {
+    // Specify 'since' only if we have already received some messages. If
+    // we have no locally cached messages then we don't care if any messages were deleted.
+    return this.withDel(this.topic._maxSeq > 0 ? this.topic._maxDel + 1 : undefined, limit);
+  }
+
+  /**
+   * Extract subquery: get an object that contains specified subquery.
+   * @memberof Tinode.MetaGetBuilder#
+   * @param {string} what - subquery to return: one of 'data', 'sub', 'desc', 'tags', 'cred', 'del'.
+   * @returns {Object} requested subquery or &lt;code>undefined&lt;/code>.
+   */
+  extract(what) {
+    return this.what[what];
+  }
+
+  /**
+   * Construct parameters.
+   * @memberof Tinode.MetaGetBuilder#
+   *
+   * @returns {Tinode.GetQuery} Get query
+   */
+  build() {
+    const what = [];
+    let params = {};
+    ['data', 'sub', 'desc', 'tags', 'cred', 'del'].forEach((key) => {
+      if (this.what.hasOwnProperty(key)) {
+        what.push(key);
+        if (Object.getOwnPropertyNames(this.what[key]).length > 0) {
+          params[key] = this.what[key];
+        }
+      }
+    });
+    if (what.length > 0) {
+      params.what = what.join(' ');
+    } else {
+      params = undefined;
+    }
+    return params;
+  }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Sat Jun 18 2022 15:55:06 GMT-0700 (Pacific Daylight Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>large-file.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Drafty.html">Drafty</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.append">append</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendAudio">appendAudio</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendButton">appendButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendImage">appendImage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendLineBreak">appendLineBreak</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendLink">appendLink</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachFile">attachFile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachJSON">attachJSON</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachments">attachments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attrValue">attrValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.entities">entities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.format">format</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.forwardedContent">forwardedContent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getContentType">getContentType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getDownloadUrl">getDownloadUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getEntityMimeType">getEntityMimeType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getEntitySize">getEntitySize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getPreviewUrl">getPreviewUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.hasAttachments">hasAttachments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.hasEntities">hasEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertAudio">insertAudio</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertButton">insertButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertImage">insertImage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isPlainText">isPlainText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isProcessing">isProcessing</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isValid">isValid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.mention">mention</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.parse">parse</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.preview">preview</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.quote">quote</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.replyContent">replyContent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.sanitizeEntities">sanitizeEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.shorten">shorten</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.tagName">tagName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.toPlainText">toPlainText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.updateVideoEnt">updateVideoEnt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.videoCall">videoCall</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.wrapAsForm">wrapAsForm</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.wrapInto">wrapInto</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.html">Tinode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.credential">credential</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.diff">diff</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.getLibrary">getLibrary</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.getVersion">getVersion</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isChannelTopicName">isChannelTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isCommTopicName">isCommTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isGroupTopicName">isGroupTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isMeTopicName">isMeTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isNewGroupTopicName">isNewGroupTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isNullValue">isNullValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isP2PTopicName">isP2PTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isRelativeURL">isRelativeURL</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.setDatabaseProvider">setDatabaseProvider</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.setNetworkProviders">setNetworkProviders</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.topicType">topicType</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.AccessMode.html">AccessMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.decode">decode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.encode">encode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getExcessive">getExcessive</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getGiven">getGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getMissing">getMissing</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getMode">getMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getWant">getWant</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isAdmin">isAdmin</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isApprover">isApprover</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isDeleter">isDeleter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isJoiner">isJoiner</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isMuted">isMuted</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isOwner">isOwner</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isPresencer">isPresencer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isReader">isReader</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isSharer">isSharer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isWriter">isWriter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setGiven">setGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setMode">setMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setWant">setWant</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.update">update</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateAll">updateAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateGiven">updateGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateMode">updateMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateWant">updateWant</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.CBuffer.html">CBuffer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#delAt">delAt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#delRange">delRange</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#filter">filter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#find">find</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#forEach">forEach</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#getAt">getAt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#getLast">getLast</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#length">length</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#put">put</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#reset">reset</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.Connection.html">Connection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#backoffReset">backoffReset</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#connect">connect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#disconnect">disconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#isConnected">isConnected</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#probe">probe</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#reconnect">reconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#sendText">sendText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#transport">transport</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.exports.TopicFnd.html">exports.TopicFnd</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.exports.TopicMe.html">exports.TopicMe</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html">MetaGetBuilder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#build">build</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#extract">extract</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withCred">withCred</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withData">withData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withDel">withDel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withDesc">withDesc</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withEarlierData">withEarlierData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterData">withLaterData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterDel">withLaterDel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterDesc">withLaterDesc</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterOneSub">withLaterOneSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterSub">withLaterSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withOneSub">withOneSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withSub">withSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withTags">withTags</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.module.exports.html">module.exports</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.Topic.html">Topic</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#deleteDatabase">deleteDatabase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#initDatabase">initDatabase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#jsonHelper">jsonHelper</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toString">toString</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">large-file.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @file Utilities for uploading and downloading files.
+ *
+ * @copyright 2015-2022 Tinode LLC.
+ */
+'use strict';
+
+import {
+  jsonParseHelper
+} from './utils.js';
+
+let XHRProvider;
+
+/**
+ * @class LargeFileHelper - utilities for uploading and downloading files out of band.
+ * Don't instantiate this class directly. Use {Tinode.getLargeFileHelper} instead.
+ * @memberof Tinode
+ *
+ * @param {Tinode} tinode - the main Tinode object.
+ * @param {string} version - protocol version, i.e. '0'.
+ */
+export default class LargeFileHelper {
+  constructor(tinode, version) {
+    this._tinode = tinode;
+    this._version = version;
+
+    this._apiKey = tinode._apiKey;
+    this._authToken = tinode.getAuthToken();
+    this._reqId = tinode.getNextUniqueId();
+    this.xhr = new XHRProvider();
+
+    // Promise
+    this.toResolve = null;
+    this.toReject = null;
+
+    // Callbacks
+    this.onProgress = null;
+    this.onSuccess = null;
+    this.onFailure = null;
+  }
+
+  /**
+   * Start uploading the file to a non-default endpoint.
+   *
+   * @memberof Tinode.LargeFileHelper#
+   *
+   * @param {string} baseUrl alternative base URL of upload server.
+   * @param {File|Blob} data to upload.
+   * @param {string} avatarFor topic name if the upload represents an avatar.
+   * @param {Callback} onProgress callback. Takes one {float} parameter 0..1
+   * @param {Callback} onSuccess callback. Called when the file is successfully uploaded.
+   * @param {Callback} onFailure callback. Called in case of a failure.
+   *
+   * @returns {Promise} resolved/rejected when the upload is completed/failed.
+   */
+  uploadWithBaseUrl(baseUrl, data, avatarFor, onProgress, onSuccess, onFailure) {
+    if (!this._authToken) {
+      throw new Error("Must authenticate first");
+    }
+    const instance = this;
+
+    let url = `/v${this._version}/file/u/`;
+    if (baseUrl) {
+      let base = baseUrl;
+      if (base.endsWith('/')) {
+        // Removing trailing slash.
+        base = base.slice(0, -1);
+      }
+      if (base.startsWith('http://') || base.startsWith('https://')) {
+        url = base + url;
+      } else {
+        throw new Error(`Invalid base URL '${baseUrl}'`);
+      }
+    }
+    this.xhr.open('POST', url, true);
+    this.xhr.setRequestHeader('X-Tinode-APIKey', this._apiKey);
+    this.xhr.setRequestHeader('X-Tinode-Auth', `Token ${this._authToken.token}`);
+    const result = new Promise((resolve, reject) => {
+      this.toResolve = resolve;
+      this.toReject = reject;
+    });
+
+    this.onProgress = onProgress;
+    this.onSuccess = onSuccess;
+    this.onFailure = onFailure;
+
+    this.xhr.upload.onprogress = (e) => {
+      if (e.lengthComputable &amp;&amp; instance.onProgress) {
+        instance.onProgress(e.loaded / e.total);
+      }
+    };
+
+    this.xhr.onload = function() {
+      let pkt;
+      try {
+        pkt = JSON.parse(this.response, jsonParseHelper);
+      } catch (err) {
+        instance._tinode.logger("ERROR: Invalid server response in LargeFileHelper", this.response);
+        pkt = {
+          ctrl: {
+            code: this.status,
+            text: this.statusText
+          }
+        };
+      }
+
+      if (this.status >= 200 &amp;&amp; this.status &lt; 300) {
+        if (instance.toResolve) {
+          instance.toResolve(pkt.ctrl.params.url);
+        }
+        if (instance.onSuccess) {
+          instance.onSuccess(pkt.ctrl);
+        }
+      } else if (this.status >= 400) {
+        if (instance.toReject) {
+          instance.toReject(new Error(`${pkt.ctrl.text} (${pkt.ctrl.code})`));
+        }
+        if (instance.onFailure) {
+          instance.onFailure(pkt.ctrl);
+        }
+      } else {
+        instance._tinode.logger("ERROR: Unexpected server response status", this.status, this.response);
+      }
+    };
+
+    this.xhr.onerror = function(e) {
+      if (instance.toReject) {
+        instance.toReject(new Error("failed"));
+      }
+      if (instance.onFailure) {
+        instance.onFailure(null);
+      }
+    };
+
+    this.xhr.onabort = function(e) {
+      if (instance.toReject) {
+        instance.toReject(new Error("upload cancelled by user"));
+      }
+      if (instance.onFailure) {
+        instance.onFailure(null);
+      }
+    };
+
+    try {
+      const form = new FormData();
+      form.append('file', data);
+      form.set('id', this._reqId);
+      if (avatarFor) {
+        form.set('topic', avatarFor);
+      }
+      this.xhr.send(form);
+    } catch (err) {
+      if (this.toReject) {
+        this.toReject(err);
+      }
+      if (this.onFailure) {
+        this.onFailure(null);
+      }
+    }
+
+    return result;
+  }
+  /**
+   * Start uploading the file to default endpoint.
+   *
+   * @memberof Tinode.LargeFileHelper#
+   *
+   * @param {File|Blob} data to upload
+   * @param {string} avatarFor topic name if the upload represents an avatar.
+   * @param {Callback} onProgress callback. Takes one {float} parameter 0..1
+   * @param {Callback} onSuccess callback. Called when the file is successfully uploaded.
+   * @param {Callback} onFailure callback. Called in case of a failure.
+   *
+   * @returns {Promise} resolved/rejected when the upload is completed/failed.
+   */
+  upload(data, avatarFor, onProgress, onSuccess, onFailure) {
+    const baseUrl = (this._tinode._secure ? 'https://' : 'http://') + this._tinode._host;
+    return this.uploadWithBaseUrl(baseUrl, data, avatarFor, onProgress, onSuccess, onFailure);
+  }
+  /**
+   * Download the file from a given URL using GET request. This method works with the Tinode server only.
+   *
+   * @memberof Tinode.LargeFileHelper#
+   *
+   * @param {string} relativeUrl - URL to download the file from. Must be relative url, i.e. must not contain the host.
+   * @param {string=} filename - file name to use for the downloaded file.
+   *
+   * @returns {Promise} resolved/rejected when the download is completed/failed.
+   */
+  download(relativeUrl, filename, mimetype, onProgress, onError) {
+    if (!Tinode.isRelativeURL(relativeUrl)) {
+      // As a security measure refuse to download from an absolute URL.
+      if (onError) {
+        onError(`The URL '${relativeUrl}' must be relative, not absolute`);
+      }
+      return;
+    }
+    if (!this._authToken) {
+      if (onError) {
+        onError("Must authenticate first");
+      }
+      return;
+    }
+    const instance = this;
+    // Get data as blob (stored by the browser as a temporary file).
+    this.xhr.open('GET', relativeUrl, true);
+    this.xhr.setRequestHeader('X-Tinode-APIKey', this._apiKey);
+    this.xhr.setRequestHeader('X-Tinode-Auth', 'Token ' + this._authToken.token);
+    this.xhr.responseType = 'blob';
+
+    this.onProgress = onProgress;
+    this.xhr.onprogress = function(e) {
+      if (instance.onProgress) {
+        // Passing e.loaded instead of e.loaded/e.total because e.total
+        // is always 0 with gzip compression enabled by the server.
+        instance.onProgress(e.loaded);
+      }
+    };
+
+    const result = new Promise((resolve, reject) => {
+      this.toResolve = resolve;
+      this.toReject = reject;
+    });
+
+    // The blob needs to be saved as file. There is no known way to
+    // save the blob as file other than to fake a click on an &lt;a href... download=...>.
+    this.xhr.onload = function() {
+      if (this.status == 200) {
+        const link = document.createElement('a');
+        // URL.createObjectURL is not available in non-browser environment. This call will fail.
+        link.href = window.URL.createObjectURL(new Blob([this.response], {
+          type: mimetype
+        }));
+        link.style.display = 'none';
+        link.setAttribute('download', filename);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        window.URL.revokeObjectURL(link.href);
+        if (instance.toResolve) {
+          instance.toResolve();
+        }
+      } else if (this.status >= 400 &amp;&amp; instance.toReject) {
+        // The this.responseText is undefined, must use this.response which is a blob.
+        // Need to convert this.response to JSON. The blob can only be accessed by the
+        // FileReader.
+        const reader = new FileReader();
+        reader.onload = function() {
+          try {
+            const pkt = JSON.parse(this.result, jsonParseHelper);
+            instance.toReject(new Error(`${pkt.ctrl.text} (${pkt.ctrl.code})`));
+          } catch (err) {
+            instance._tinode.logger("ERROR: Invalid server response in LargeFileHelper", this.result);
+            instance.toReject(err);
+          }
+        };
+        reader.readAsText(this.response);
+      }
+    };
+
+    this.xhr.onerror = function(e) {
+      if (instance.toReject) {
+        instance.toReject(new Error("failed"));
+      }
+    };
+
+    this.xhr.onabort = function() {
+      if (instance.toReject) {
+        instance.toReject(null);
+      }
+    };
+
+    try {
+      this.xhr.send();
+    } catch (err) {
+      if (this.toReject) {
+        this.toReject(err);
+      }
+    }
+
+    return result;
+  }
+  /**
+   * Try to cancel an ongoing upload or download.
+   * @memberof Tinode.LargeFileHelper#
+   */
+  cancel() {
+    if (this.xhr &amp;&amp; this.xhr.readyState &lt; 4) {
+      this.xhr.abort();
+    }
+  }
+  /**
+   * Get unique id of this request.
+   * @memberof Tinode.LargeFileHelper#
+   *
+   * @returns {string} unique id
+   */
+  getId() {
+    return this._reqId;
+  }
+  /**
+   * To use LargeFileHelper in a non browser context, supply XMLHttpRequest provider.
+   * @static
+   * @memberof LargeFileHelper
+   * @param xhrProvider XMLHttpRequest provider, e.g. for node &lt;code>require('xhr')&lt;/code>.
+   */
+  static setNetworkProvider(xhrProvider) {
+    XHRProvider = xhrProvider;
+  }
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Sat Jun 18 2022 15:55:06 GMT-0700 (Pacific Daylight Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

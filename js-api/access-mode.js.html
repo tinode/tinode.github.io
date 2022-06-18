@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>access-mode.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Drafty.html">Drafty</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.append">append</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendAudio">appendAudio</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendButton">appendButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendImage">appendImage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendLineBreak">appendLineBreak</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.appendLink">appendLink</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachFile">attachFile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachJSON">attachJSON</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attachments">attachments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.attrValue">attrValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.entities">entities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.format">format</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.forwardedContent">forwardedContent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getContentType">getContentType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getDownloadUrl">getDownloadUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getEntityMimeType">getEntityMimeType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getEntitySize">getEntitySize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.getPreviewUrl">getPreviewUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.hasAttachments">hasAttachments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.hasEntities">hasEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertAudio">insertAudio</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertButton">insertButton</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.insertImage">insertImage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isPlainText">isPlainText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isProcessing">isProcessing</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.isValid">isValid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.mention">mention</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.parse">parse</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.preview">preview</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.quote">quote</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.replyContent">replyContent</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.sanitizeEntities">sanitizeEntities</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.shorten">shorten</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.tagName">tagName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.toPlainText">toPlainText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.updateVideoEnt">updateVideoEnt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.videoCall">videoCall</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.wrapAsForm">wrapAsForm</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Drafty.html#.wrapInto">wrapInto</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.html">Tinode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.credential">credential</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.diff">diff</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.getLibrary">getLibrary</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.getVersion">getVersion</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isChannelTopicName">isChannelTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isCommTopicName">isCommTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isGroupTopicName">isGroupTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isMeTopicName">isMeTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isNewGroupTopicName">isNewGroupTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isNullValue">isNullValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isP2PTopicName">isP2PTopicName</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.isRelativeURL">isRelativeURL</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.setDatabaseProvider">setDatabaseProvider</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.setNetworkProviders">setNetworkProviders</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.html#.topicType">topicType</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.AccessMode.html">AccessMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.decode">decode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.encode">encode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getExcessive">getExcessive</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getGiven">getGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getMissing">getMissing</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getMode">getMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.getWant">getWant</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isAdmin">isAdmin</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isApprover">isApprover</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isDeleter">isDeleter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isJoiner">isJoiner</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isMuted">isMuted</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isOwner">isOwner</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isPresencer">isPresencer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isReader">isReader</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isSharer">isSharer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.isWriter">isWriter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setGiven">setGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setMode">setMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.setWant">setWant</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.update">update</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateAll">updateAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateGiven">updateGiven</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateMode">updateMode</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.AccessMode.html#.updateWant">updateWant</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.CBuffer.html">CBuffer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#delAt">delAt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#delRange">delRange</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#filter">filter</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#find">find</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#forEach">forEach</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#getAt">getAt</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#getLast">getLast</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#length">length</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#put">put</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.CBuffer.html#reset">reset</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.Connection.html">Connection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#backoffReset">backoffReset</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#connect">connect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#disconnect">disconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#isConnected">isConnected</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#probe">probe</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#reconnect">reconnect</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#sendText">sendText</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.Connection.html#transport">transport</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.exports.TopicFnd.html">exports.TopicFnd</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.exports.TopicMe.html">exports.TopicMe</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html">MetaGetBuilder</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#build">build</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#extract">extract</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withCred">withCred</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withData">withData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withDel">withDel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withDesc">withDesc</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withEarlierData">withEarlierData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterData">withLaterData</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterDel">withLaterDel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterDesc">withLaterDesc</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterOneSub">withLaterOneSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withLaterSub">withLaterSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withOneSub">withOneSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withSub">withSub</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Tinode.MetaGetBuilder.html#withTags">withTags</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.module.exports.html">module.exports</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Tinode.Topic.html">Topic</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#deleteDatabase">deleteDatabase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#initDatabase">initDatabase</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#jsonHelper">jsonHelper</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#toString">toString</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">access-mode.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @file Access control model.
+ *
+ * @copyright 2015-2022 Tinode LLC.
+ */
+'use strict';
+
+// NOTE TO DEVELOPERS:
+// Localizable strings should be double quoted "строка на другом языке",
+// non-localizable strings should be single quoted 'non-localized'.
+
+/**
+ * Helper class for handling access mode.
+ *
+ * @class AccessMode
+ * @memberof Tinode
+ *
+ * @param {AccessMode|Object=} acs - AccessMode to copy or access mode object received from the server.
+ */
+export default class AccessMode {
+  constructor(acs) {
+    if (acs) {
+      this.given = typeof acs.given == 'number' ? acs.given : AccessMode.decode(acs.given);
+      this.want = typeof acs.want == 'number' ? acs.want : AccessMode.decode(acs.want);
+      this.mode = acs.mode ? (typeof acs.mode == 'number' ? acs.mode : AccessMode.decode(acs.mode)) :
+        (this.given &amp; this.want);
+    }
+  }
+
+  static #checkFlag(val, side, flag) {
+    side = side || 'mode';
+    if (['given', 'want', 'mode'].includes(side)) {
+      return ((val[side] &amp; flag) != 0);
+    }
+    throw new Error(`Invalid AccessMode component '${side}'`);
+  }
+  /**
+   * Parse string into an access mode value.
+   * @memberof Tinode.AccessMode
+   * @static
+   *
+   * @param {string | Number} mode - either a String representation of the access mode to parse or a set of bits to assign.
+   * @returns {number} - Access mode as a numeric value.
+   */
+  static decode(str) {
+    if (!str) {
+      return null;
+    } else if (typeof str == 'number') {
+      return str &amp; AccessMode._BITMASK;
+    } else if (str === 'N' || str === 'n') {
+      return AccessMode._NONE;
+    }
+
+    const bitmask = {
+      'J': AccessMode._JOIN,
+      'R': AccessMode._READ,
+      'W': AccessMode._WRITE,
+      'P': AccessMode._PRES,
+      'A': AccessMode._APPROVE,
+      'S': AccessMode._SHARE,
+      'D': AccessMode._DELETE,
+      'O': AccessMode._OWNER
+    };
+
+    let m0 = AccessMode._NONE;
+
+    for (let i = 0; i &lt; str.length; i++) {
+      const bit = bitmask[str.charAt(i).toUpperCase()];
+      if (!bit) {
+        // Unrecognized bit, skip.
+        continue;
+      }
+      m0 |= bit;
+    }
+    return m0;
+  }
+  /**
+   * Convert numeric representation of the access mode into a string.
+   *
+   * @memberof Tinode.AccessMode
+   * @static
+   *
+   * @param {number} val - access mode value to convert to a string.
+   * @returns {string} - Access mode as a string.
+   */
+  static encode(val) {
+    if (val === null || val === AccessMode._INVALID) {
+      return null;
+    } else if (val === AccessMode._NONE) {
+      return 'N';
+    }
+
+    const bitmask = ['J', 'R', 'W', 'P', 'A', 'S', 'D', 'O'];
+    let res = '';
+    for (let i = 0; i &lt; bitmask.length; i++) {
+      if ((val &amp; (1 &lt;&lt; i)) != 0) {
+        res = res + bitmask[i];
+      }
+    }
+    return res;
+  }
+  /**
+   * Update numeric representation of access mode with the new value. The value
+   * is one of the following:
+   *  - a string starting with &lt;code>'+'&lt;/code> or &lt;code>'-'&lt;/code> then the bits to add or remove, e.g. &lt;code>'+R-W'&lt;/code> or &lt;code>'-PS'&lt;/code>.
+   *  - a new value of access mode
+   *
+   * @memberof Tinode.AccessMode
+   * @static
+   *
+   * @param {number} val - access mode value to update.
+   * @param {string} upd - update to apply to val.
+   * @returns {number} - updated access mode.
+   */
+  static update(val, upd) {
+    if (!upd || typeof upd != 'string') {
+      return val;
+    }
+
+    let action = upd.charAt(0);
+    if (action == '+' || action == '-') {
+      let val0 = val;
+      // Split delta-string like '+ABC-DEF+Z' into an array of parts including + and -.
+      const parts = upd.split(/([-+])/);
+      // Starting iteration from 1 because String.split() creates an array with the first empty element.
+      // Iterating by 2 because we parse pairs +/- then data.
+      for (let i = 1; i &lt; parts.length - 1; i += 2) {
+        action = parts[i];
+        const m0 = AccessMode.decode(parts[i + 1]);
+        if (m0 == AccessMode._INVALID) {
+          return val;
+        }
+        if (m0 == null) {
+          continue;
+        }
+        if (action === '+') {
+          val0 |= m0;
+        } else if (action === '-') {
+          val0 &amp;= ~m0;
+        }
+      }
+      val = val0;
+    } else {
+      // The string is an explicit new value 'ABC' rather than delta.
+      const val0 = AccessMode.decode(upd);
+      if (val0 != AccessMode._INVALID) {
+        val = val0;
+      }
+    }
+
+    return val;
+  }
+  /**
+   * Bits present in a1 but missing in a2.
+   *
+   * @static
+   * @memberof Tinode
+   *
+   * @param {number | string} a1 - access mode to subtract from.
+   * @param {number | string} a2 - access mode to subtract.
+   * @returns {number} access mode with bits present in &lt;code>a1&lt;/code> but missing in &lt;code>a2&lt;/code>.
+   */
+  static diff(a1, a2) {
+    a1 = AccessMode.decode(a1);
+    a2 = AccessMode.decode(a2);
+
+    if (a1 == AccessMode._INVALID || a2 == AccessMode._INVALID) {
+      return AccessMode._INVALID;
+    }
+    return a1 &amp; ~a2;
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Custom formatter
+   */
+  toString() {
+    return '{"mode": "' + AccessMode.encode(this.mode) +
+      '", "given": "' + AccessMode.encode(this.given) +
+      '", "want": "' + AccessMode.encode(this.want) + '"}';
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Converts numeric values to strings.
+   */
+  jsonHelper() {
+    return {
+      mode: AccessMode.encode(this.mode),
+      given: AccessMode.encode(this.given),
+      want: AccessMode.encode(this.want)
+    };
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Assign value to 'mode'.
+   * @memberof Tinode.AccessMode
+   *
+   * @param {string | Number} m - either a string representation of the access mode or a set of bits.
+   * @returns {AccessMode} - &lt;code>this&lt;/code> AccessMode.
+   */
+  setMode(m) {
+    this.mode = AccessMode.decode(m);
+    return this;
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Update &lt;code>mode&lt;/code> value.
+   * @memberof Tinode.AccessMode
+   *
+   * @param {string} u - string representation of the changes to apply to access mode.
+   * @returns {AccessMode} - &lt;code>this&lt;/code> AccessMode.
+   */
+  updateMode(u) {
+    this.mode = AccessMode.update(this.mode, u);
+    return this;
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Get &lt;code>mode&lt;/code> value as a string.
+   * @memberof Tinode.AccessMode
+   *
+   * @returns {string} - &lt;code>mode&lt;/code> value.
+   */
+  getMode() {
+    return AccessMode.encode(this.mode);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Assign &lt;code>given&lt;/code>  value.
+   * @memberof Tinode.AccessMode
+   *
+   * @param {string | Number} g - either a string representation of the access mode or a set of bits.
+   * @returns {AccessMode} - &lt;code>this&lt;/code> AccessMode.
+   */
+  setGiven(g) {
+    this.given = AccessMode.decode(g);
+    return this;
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Update 'given' value.
+   * @memberof Tinode.AccessMode
+   *
+   * @param {string} u - string representation of the changes to apply to access mode.
+   * @returns {AccessMode} - &lt;code>this&lt;/code> AccessMode.
+   */
+  updateGiven(u) {
+    this.given = AccessMode.update(this.given, u);
+    return this;
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Get 'given' value as a string.
+   * @memberof Tinode.AccessMode
+   *
+   * @returns {string} - &lt;b>given&lt;/b> value.
+   */
+  getGiven() {
+    return AccessMode.encode(this.given);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Assign 'want' value.
+   * @memberof Tinode.AccessMode
+   *
+   * @param {string | Number} w - either a string representation of the access mode or a set of bits.
+   * @returns {AccessMode} - &lt;code>this&lt;/code> AccessMode.
+   */
+  setWant(w) {
+    this.want = AccessMode.decode(w);
+    return this;
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Update 'want' value.
+   * @memberof Tinode.AccessMode
+   *
+   * @param {string} u - string representation of the changes to apply to access mode.
+   * @returns {AccessMode} - &lt;code>this&lt;/code> AccessMode.
+   */
+  updateWant(u) {
+    this.want = AccessMode.update(this.want, u);
+    return this;
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Get 'want' value as a string.
+   * @memberof Tinode.AccessMode
+   *
+   * @returns {string} - &lt;b>want&lt;/b> value.
+   */
+  getWant() {
+    return AccessMode.encode(this.want);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Get permissions present in 'want' but missing in 'given'.
+   * Inverse of {@link Tinode.AccessMode#getExcessive}
+   *
+   * @memberof Tinode.AccessMode
+   *
+   * @returns {string} permissions present in &lt;b>want&lt;/b> but missing in &lt;b>given&lt;/b>.
+   */
+  getMissing() {
+    return AccessMode.encode(this.want &amp; ~this.given);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Get permissions present in 'given' but missing in 'want'.
+   * Inverse of {@link Tinode.AccessMode#getMissing}
+   * @memberof Tinode.AccessMode
+   *
+   * @returns {string} permissions present in &lt;b>given&lt;/b> but missing in &lt;b>want&lt;/b>.
+   */
+  getExcessive() {
+    return AccessMode.encode(this.given &amp; ~this.want);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Update 'want', 'give', and 'mode' values.
+   * @memberof Tinode.AccessMode
+   *
+   * @param {AccessMode} val - new access mode value.
+   * @returns {AccessMode} - &lt;code>this&lt;/code> AccessMode.
+   */
+  updateAll(val) {
+    if (val) {
+      this.updateGiven(val.given);
+      this.updateWant(val.want);
+      this.mode = this.given &amp; this.want;
+    }
+    return this;
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Check if Owner (O) flag is set.
+   * @memberof Tinode.AccessMode
+   * @param {string=} side - which permission to check: given, want, mode; default: mode.
+   * @returns {boolean} - &lt;code>true&lt;/code> if flag is set.
+   */
+  isOwner(side) {
+    return AccessMode.#checkFlag(this, side, AccessMode._OWNER);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Check if Presence (P) flag is set.
+   * @memberof Tinode.AccessMode
+   * @param {string=} side - which permission to check: given, want, mode; default: mode.
+   * @returns {boolean} - &lt;code>true&lt;/code> if flag is set.
+   */
+  isPresencer(side) {
+    return AccessMode.#checkFlag(this, side, AccessMode._PRES);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Check if Presence (P) flag is NOT set.
+   * @memberof Tinode.AccessMode
+   * @param {string=} side - which permission to check: given, want, mode; default: mode.
+   * @returns {boolean} - &lt;code>true&lt;/code> if flag is set.
+   */
+  isMuted(side) {
+    return !this.isPresencer(side);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Check if Join (J) flag is set.
+   * @memberof Tinode.AccessMode
+   * @param {string=} side - which permission to check: given, want, mode; default: mode.
+   * @returns {boolean} - &lt;code>true&lt;/code> if flag is set.
+   */
+  isJoiner(side) {
+    return AccessMode.#checkFlag(this, side, AccessMode._JOIN);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Check if Reader (R) flag is set.
+   * @memberof Tinode.AccessMode
+   * @param {string=} side - which permission to check: given, want, mode; default: mode.
+   * @returns {boolean} - &lt;code>true&lt;/code> if flag is set.
+   */
+  isReader(side) {
+    return AccessMode.#checkFlag(this, side, AccessMode._READ);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Check if Writer (W) flag is set.
+   * @memberof Tinode.AccessMode
+   * @param {string=} side - which permission to check: given, want, mode; default: mode.
+   * @returns {boolean} - &lt;code>true&lt;/code> if flag is set.
+   */
+  isWriter(side) {
+    return AccessMode.#checkFlag(this, side, AccessMode._WRITE);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Check if Approver (A) flag is set.
+   * @memberof Tinode.AccessMode
+   * @param {string=} side - which permission to check: given, want, mode; default: mode.
+   * @returns {boolean} - &lt;code>true&lt;/code> if flag is set.
+   */
+  isApprover(side) {
+    return AccessMode.#checkFlag(this, side, AccessMode._APPROVE);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Check if either one of Owner (O) or Approver (A) flags is set.
+   * @memberof Tinode.AccessMode
+   * @param {string=} side - which permission to check: given, want, mode; default: mode.
+   * @returns {boolean} - &lt;code>true&lt;/code> if flag is set.
+   */
+  isAdmin(side) {
+    return this.isOwner(side) || this.isApprover(side);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Check if either one of Owner (O), Approver (A), or Sharer (S) flags is set.
+   * @memberof Tinode.AccessMode
+   * @param {string=} side - which permission to check: given, want, mode; default: mode.
+   * @returns {boolean} - &lt;code>true&lt;/code> if flag is set.
+   */
+  isSharer(side) {
+    return this.isAdmin(side) || AccessMode.#checkFlag(this, side, AccessMode._SHARE);
+  }
+  /**
+   * AccessMode is a class representing topic access mode.
+   *
+   * @memberof Tinode
+   * @class AccessMode
+   */
+  /**
+   * Check if Deleter (D) flag is set.
+   * @memberof Tinode.AccessMode
+   * @param {string=} side - which permission to check: given, want, mode; default: mode.
+   * @returns {boolean} - &lt;code>true&lt;/code> if flag is set.
+   */
+  isDeleter(side) {
+    return AccessMode.#checkFlag(this, side, AccessMode._DELETE);
+  }
+}
+
+AccessMode._NONE = 0x00;
+AccessMode._JOIN = 0x01;
+AccessMode._READ = 0x02;
+AccessMode._WRITE = 0x04;
+AccessMode._PRES = 0x08;
+AccessMode._APPROVE = 0x10;
+AccessMode._SHARE = 0x20;
+AccessMode._DELETE = 0x40;
+AccessMode._OWNER = 0x80;
+
+AccessMode._BITMASK = AccessMode._JOIN | AccessMode._READ | AccessMode._WRITE | AccessMode._PRES |
+  AccessMode._APPROVE | AccessMode._SHARE | AccessMode._DELETE | AccessMode._OWNER;
+AccessMode._INVALID = 0x100000;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a> on Sat Jun 18 2022 15:55:06 GMT-0700 (Pacific Daylight Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
