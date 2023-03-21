@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>tinode-sdk - Documentation</title>
+    <title>exports.Topic - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">tinode-sdk</h1>
+    <h1 class="page-title">exports.Topic</h1>
     
 
     
@@ -41,6 +41,11 @@
 
 <header>
     
+        <h2>
+        exports.Topic
+        </h2>
+        
+            <div class="class-description">Topic is a class representing a logical communication channel.</div>
         
     
 </header>
@@ -49,8 +54,454 @@
     <div class="container-overview">
     
         
+<div class="section-method">
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="exports.Topic"><span class="type-signature"></span>new exports.Topic<span class="signature">(name, callbacks<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    Create topic.
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="topic.js.html">topic.js</a>, <a href="topic.js.html#line25">line 25</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
 
         
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                Name of the topic to create.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callbacks</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>Object</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                Object with various event callbacks.
+                
+                    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>onData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code><a href="global.html#onData">onData</a></code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Callback which receives a <code>{data}</code> message.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onMeta</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>callback</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Callback which receives a <code>{meta}</code> message.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onPres</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>callback</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Callback which receives a <code>{pres}</code> message.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>callback</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Callback which receives an <code>{info}</code> message.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onMetaDesc</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>callback</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Callback which receives changes to topic desctioption desc.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onMetaSub</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>callback</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Called for a single subscription record change.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onSubsUpdated</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>callback</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Called after a batch of subscription changes have been recieved and cached.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onDeleteTopic</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>callback</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Called after the topic is deleted.
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callbacls.onAllMessagesReceived</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>callback</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                Called when all requested <code>{data}</code> messages have been recived.
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
     
     </div>
 
@@ -58,13 +509,6 @@
 
     
 
-    
-        <h3 class="subsection-title">Classes</h3>
-
-        <dl>
-            <dt><a href="module-tinode-sdk.Tinode.html">Tinode</a></dt>
-            <dd></dd>
-        </dl>
     
 
      
@@ -75,2756 +519,6 @@
 
     
 
-    
-        <h3 class="subsection-title">Type Definitions</h3>
-
-        
-                
-<div class="section-members">
-<h4 class="name" id="~AccountParams">AccountParams</h4>
-
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>defacs</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>DefAcs</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Default access parameters for user's <code>me</code> topic.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>public</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Object</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Public application-defined data exposed on <code>me</code> topic.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>private</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Object</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Private application-defined data accessible on <code>me</code> topic.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>trusted</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Object</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Trusted user data which can be set by a root user only.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>tags</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Array.&lt;string></code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">array of string tags for user discovery.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>scheme</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Temporary authentication scheme for password reset.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>secret</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Temporary authentication secret for password reset.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>attachments</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Array.&lt;string></code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Array of references to out of band attachments used in account description.</td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line1174">line 1174</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><code>Object</code></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</div>
-
-            
-                
-<div class="section-members">
-<h4 class="name" id="~AuthToken">AuthToken</h4>
-
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>token</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Token value.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>expires</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Date</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Token expiration time.</td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line1417">line 1417</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><code>Object</code></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</div>
-
-            
-                
-<div class="section-members">
-<h4 class="name" id="~Credential">Credential</h4>
-
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>meth</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">validation method.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>val</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">value to validate (e.g. email or phone number).</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>resp</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">validation response.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>params</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Object</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">validation parameters.</td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line1348">line 1348</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><code>Object</code></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</div>
-
-            
-                
-<div class="section-members">
-<h4 class="name" id="~DefAcs">DefAcs</h4>
-
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>auth</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Access mode for <code>me</code> for authenticated users.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>anon</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Access mode for <code>me</code> for anonymous users.</td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line1186">line 1186</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><code>Object</code></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</div>
-
-            
-                
-<div class="section-members">
-<h4 class="name" id="~DelRange">DelRange</h4>
-
-
-
-
-<div class="description">
-    Range of message IDs to delete.
-</div>
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>low</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>number</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">low end of the range, inclusive (closed).</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>hi</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>number</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">high end of the range, exclusive (open).</td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line1771">line 1771</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><code>Object</code></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</div>
-
-            
-                
-<div class="section-members">
-<h4 class="name" id="~GetDataType">GetDataType</h4>
-
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>since</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>number</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Load messages with seq id equal or greater than this value.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>before</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>number</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Load messages with seq id lower than this number.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>limit</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>number</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Maximum number of results to return.</td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line1714">line 1714</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><code>Object</code></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</div>
-
-            
-                
-<div class="section-members">
-<h4 class="name" id="~GetOptsType">GetOptsType</h4>
-
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>ims</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Date</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">"If modified since", fetch data only it was was modified since stated date.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>limit</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>number</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Maximum number of results to return. Ignored when querying topic description.</td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line1707">line 1707</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><code>Object</code></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</div>
-
-            
-                
-<div class="section-members">
-<h4 class="name" id="~GetQuery">GetQuery</h4>
-
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>desc</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>GetOptsType</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">If provided (even if empty), fetch topic description.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>sub</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>GetOptsType</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">If provided (even if empty), fetch topic subscriptions.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>data</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>GetDataType</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">If provided (even if empty), get messages.</td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line1699">line 1699</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><code>Object</code></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</div>
-
-            
-                
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="~onConnect"><span class="type-signature"></span>onConnect<span class="signature">(code, text, params)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line2160">line 2160</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>code</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>number</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                Result code
-                
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>text</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                Text epxplaining the completion, i.e "OK" or an error message.
-                
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>params</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>ServerParams</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                Parameters returned by the server.
-                
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-            
-                
-<div class="section-method">
-
-    
-
-    <h4 class="name" id="~onLogin"><span class="type-signature"></span>onLogin<span class="signature">(code, text)</span><span class="type-signature"></span></h4>
-
-    
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line2178">line 2178</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>code</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>number</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                NUmeric completion code, same as HTTP status codes.
-                
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>text</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                Explanation of the completion code.
-                
-            </td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-            
-                
-<div class="section-members">
-<h4 class="name" id="~ServerParams">ServerParams</h4>
-
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>ver</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Server version</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>build</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Server build</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>sid</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Session ID, long polling connections only.</td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line2151">line 2151</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><code>Object</code></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</div>
-
-            
-                
-<div class="section-members">
-<h4 class="name" id="~SetDesc">SetDesc</h4>
-
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>defacs</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>DefAcs</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Default access mode.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>public</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Object</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Free-form topic description, publically accessible.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>private</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Object</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Free-form topic description accessible only to the owner.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>trusted</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Object</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Trusted user data which can be set by a root user only.</td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line1453">line 1453</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><code>Object</code></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</div>
-
-            
-                
-<div class="section-members">
-<h4 class="name" id="~SetParams">SetParams</h4>
-
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>desc</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>SetDesc</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Topic initialization parameters when creating a new topic or a new subscription.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>sub</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>SetSub</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">Subscription initialization parameters.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>attachments</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>Array.&lt;string></code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">URLs of out of band attachments used in parameters.</td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line1446">line 1446</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><code>Object</code></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</div>
-
-            
-                
-<div class="section-members">
-<h4 class="name" id="~SetSub">SetSub</h4>
-
-
-
-
-
-
-
-
-    <h5 class="subsection-title">Properties:</h5>
-
-    
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-        <th>Attributes</th>
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>user</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">UID of the user affected by the request. Default (empty) - current user.</td>
-        </tr>
-
-        
-
-    
-
-        <tr>
-            
-                <td class="name"><code>mode</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-                <td class="attributes">
-                
-                    &lt;optional><br>
-                
-
-                
-                </td>
-            
-
-            
-
-            <td class="description last">User access mode, either requested or assigned dependent on context.</td>
-        </tr>
-
-        
-
-    
-    </tbody>
-</table>
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="tinode.js.html">tinode.js</a>, <a href="tinode.js.html#line1461">line 1461</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-    <h5>Type:</h5>
-    <ul>
-        <li>
-            
-<span class="param-type"><code>Object</code></span>
-
-
-        </li>
-    </ul>
-
-
-
-
-
-</div>
-
-            
     
 
     
