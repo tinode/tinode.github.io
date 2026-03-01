@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>module.exports - Documentation</title>
+    <title>exports - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">module.exports</h1>
+    <h1 class="page-title">exports</h1>
     
 
     
@@ -42,11 +42,10 @@
 <header>
     
         <h2>
-        module.exports
+        exports
         </h2>
         
-            <div class="class-description">LargeFileHelper - utilities for uploading and downloading files out of band.
-Don't instantiate this class directly. Use {Tinode.getLargeFileHelper} instead.</div>
+            <div class="class-description">Special case of <a href="Tinode.Topic.html">Tinode.Topic</a> for searching for contacts and group topics</div>
         
     
 </header>
@@ -61,11 +60,15 @@ Don't instantiate this class directly. Use {Tinode.getLargeFileHelper} instead.<
     <h2>Constructor</h2>
     
 
-    <h4 class="name" id="module.exports"><span class="type-signature"></span>new module.exports<span class="signature">(tinode, version)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="exports"><span class="type-signature"></span>new exports<span class="signature">(callbacks)</span><span class="type-signature"></span></h4>
 
     
 
 
+
+<div class="description">
+    Create TopicFnd.
+</div>
 
 
 
@@ -100,7 +103,7 @@ Don't instantiate this class directly. Use {Tinode.getLargeFileHelper} instead.<
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="large-file.js.html">large-file.js</a>, <a href="large-file.js.html#line30">line 30</a>
+        <a href="fnd-topic.js.html">fnd-topic.js</a>, <a href="fnd-topic.js.html#line20">line 20</a>
     </li></ul></dd>
     
 
@@ -144,13 +147,13 @@ Don't instantiate this class directly. Use {Tinode.getLargeFileHelper} instead.<
 
         <tr>
             
-                <td class="name"><code>tinode</code></td>
+                <td class="name"><code>callbacks</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><code><a href="Tinode.html">Tinode</a></code></span>
+<span class="param-type"><code>TopicFnd.Callbacks</code></span>
 
 
             
@@ -161,33 +164,7 @@ Don't instantiate this class directly. Use {Tinode.getLargeFileHelper} instead.<
             
 
             <td class="description last">
-                the main Tinode object.
-                
-            </td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>version</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><code>string</code></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">
-                protocol version, i.e. '0'.
+                Callbacks to receive various events.
                 
             </td>
         </tr>
@@ -214,6 +191,17 @@ Don't instantiate this class directly. Use {Tinode.getLargeFileHelper} instead.<
 </div>
     
     </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li><a href="Tinode.Topic.html">Tinode.Topic</a></li>
+    </ul>
+
 
     
 
@@ -11648,11 +11636,10 @@ subscriber of this topic.
 <header>
     
         <h2>
-        module.exports
+        exports
         </h2>
         
-            <div class="class-description">TopicMe - special case of <a href="Tinode.Topic.html">Tinode.Topic</a> for
-managing data of the current user, including contact list.</div>
+            <div class="class-description">Topic is a class representing a logical communication channel.</div>
         
     
 </header>
@@ -11667,11 +11654,15 @@ managing data of the current user, including contact list.</div>
     <h2>Constructor</h2>
     
 
-    <h4 class="name" id="module.exports"><span class="type-signature"></span>new module.exports<span class="signature">(callbacks)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="exports"><span class="type-signature"></span>new exports<span class="signature">(name, callbacks<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
 
     
 
 
+
+<div class="description">
+    Create topic.
+</div>
 
 
 
@@ -11706,7 +11697,7 @@ managing data of the current user, including contact list.</div>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="me-topic.js.html">me-topic.js</a>, <a href="me-topic.js.html#line23">line 23</a>
+        <a href="topic.js.html">topic.js</a>, <a href="topic.js.html#line25">line 25</a>
     </li></ul></dd>
     
 
@@ -11738,6 +11729,8 @@ managing data of the current user, including contact list.</div>
         <th>Type</th>
 
         
+        <th>Attributes</th>
+        
 
         
 
@@ -11750,13 +11743,100 @@ managing data of the current user, including contact list.</div>
 
         <tr>
             
+                <td class="name"><code>name</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                Name of the topic to create.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
                 <td class="name"><code>callbacks</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><code>TopicMe.Callbacks</code></span>
+<span class="param-type"><code>Object</code></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">
+                Object with various event callbacks.
+                
+                    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>onData</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
 
 
             
@@ -11767,7 +11847,327 @@ managing data of the current user, including contact list.</div>
             
 
             <td class="description last">
-                Callbacks to receive various events.
+                Callback which receives a <code>{data}</code> message.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onMeta</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Callback which receives a <code>{meta}</code> message.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onPres</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Callback which receives a <code>{pres}</code> message.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Callback which receives an <code>{info}</code> message.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onMetaDesc</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Callback which receives changes to topic desctioption desc.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onMetaSub</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Called for a single subscription record change.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onSubsUpdated</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Called after a batch of subscription changes have been recieved and cached.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onDeleteTopic</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Called after the topic is deleted.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onTagsUpdated</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Called after user discovery tags are updated.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onCredsUpdated</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Called after credentials are updated.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onAuxUpdated</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Called after auxiliary data is updated.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onReact</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Called after message reactions are updated.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>onAllMessagesReceived</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>function</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Called when all requested <code>{data}</code> messages have been recived.
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
                 
             </td>
         </tr>
@@ -11794,17 +12194,6 @@ managing data of the current user, including contact list.</div>
 </div>
     
     </div>
-
-    
-        <h3 class="subsection-title">Extends</h3>
-
-        
-
-
-    <ul>
-        <li><a href="Tinode.Topic.html">Tinode.Topic</a></li>
-    </ul>
-
 
     
 
