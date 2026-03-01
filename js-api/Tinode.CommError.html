@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>fnd-topic.js - Documentation</title>
+    <title>CommError - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,144 +29,222 @@
 
 <div id="main">
     
-    <h1 class="page-title">fnd-topic.js</h1>
+    <h1 class="page-title">CommError</h1>
     
 
     
 
 
 
+
+<section>
+
+<header>
     
-    <section>
-        <article>
-            <pre class="prettyprint source linenums"><code>/**
- * @file Definition of 'fnd' topic.
- *
- * @copyright 2015-2026 Tinode LLC.
- */
-'use strict';
+        <h2>
+        CommError
+        </h2>
+        
+    
+</header>
 
-import * as Const from './config.js';
-import Topic from './topic.js';
-import {
-  mergeToCache
-} from './utils.js';
+<article>
+    <div class="container-overview">
+    
+        
+<div class="section-method">
+
+    
+
+    <h4 class="name" id="CommError"><span class="type-signature"></span>new CommError<span class="signature">(message, code)</span><span class="type-signature"></span></h4>
+
+    
 
 
-/**
- * Special case of {@link Tinode.Topic} for searching for contacts and group topics.
- * @class TopicFnd
- * @extends Tinode.Topic
- * @memberof Tinode
- */
-export default class TopicFnd extends Topic {
-  // List of users and topics uid or topic_name -> Contact object)
-  _contacts = {};
 
-  /**
-   * Create TopicFnd.
-   *
-   * @param {TopicFnd.Callbacks} callbacks - Callbacks to receive various events.
-   */
-  constructor(callbacks) {
-    super(Const.TOPIC_FND, callbacks);
-  }
+<div class="description">
+    Throwable error with a numeric error code, as returned by the server.
+</div>
 
-  // Override the original Topic._processMetaSubs
-  _processMetaSubs(subs) {
-    let updateCount = Object.getOwnPropertyNames(this._contacts).length;
-    // Reset contact list.
-    this._contacts = {};
-    for (let idx in subs) {
-      let sub = subs[idx];
-      const indexBy = sub.topic ? sub.topic : sub.user;
 
-      sub = mergeToCache(this._contacts, indexBy, sub);
-      updateCount++;
 
-      if (this.onMetaSub) {
-        this.onMetaSub(sub);
-      }
-    }
 
-    if (updateCount > 0 &amp;&amp; this.onSubsUpdated) {
-      this.onSubsUpdated(Object.keys(this._contacts));
-    }
-  }
 
-  /**
-   * Publishing to TopicFnd is not supported. {@link Topic#publish} is overriden and thows an {Error} if called.
-   * @memberof Tinode.TopicFnd#
-   * @throws {Error} Always throws an error.
-   */
-  publish() {
-    return Promise.reject(new Error("Publishing to 'fnd' is not supported"));
-  }
+<dl class="details">
 
-  /**
-   * setMeta to TopicFnd resets contact list in addition to sending the message.
-   * @memberof Tinode.TopicFnd#
-   * @param {Tinode.SetParams} params - parameters to update.
-   * @returns {Promise} Promise to be resolved/rejected when the server responds to request.
-   */
-  setMeta(params) {
-    return Object.getPrototypeOf(TopicFnd.prototype).setMeta.call(this, params).then(_ => {
-      if (Object.keys(this._contacts).length > 0) {
-        this._contacts = {};
-        if (this.onSubsUpdated) {
-          this.onSubsUpdated([]);
-        }
-      }
-    });
-  }
+    
 
-  /**
-   * Check if the given tag is unique by asking the server.
-   * @param {string} tag - tag to check.
-   * @param {string} caller - identifier of the caller.
-   * @returns {Promise} promise to be resolved with true if the tag is unique, false otherwise.
-   */
-  checkTagUniqueness(tag, caller) {
-    return new Promise((resolve, reject) => {
-      this.subscribe()
-        .then(_ => this.setMeta({
-          desc: {
-            public: tag
-          }
-        }))
-        .then(_ => this.getMeta(this.startMetaQuery().withTags().build()))
-        .then(meta => {
-          if (!meta || !Array.isArray(meta.tags) || meta.tags.length == 0) {
-            resolve(true);
-          }
-          const tags = meta.tags.filter(t => t !== caller);
-          resolve(tags.length == 0);
-        })
-        .catch(err => {
-          reject(err);
-        });
-    });
-  }
+    
 
-  /**
-   * Iterate over found contacts. If callback is undefined, use {@link this.onMetaSub}.
-   * @function
-   * @memberof Tinode.TopicFnd#
-   * @param {TopicFnd.ContactCallback} callback - Callback to call for each contact.
-   * @param {Object} context - Context to use for calling the `callback`, i.e. the value of `this` inside the callback.
-   */
-  contacts(callback, context) {
-    const cb = (callback || this.onMetaSub);
-    if (cb) {
-      for (let idx in this._contacts) {
-        cb.call(context, this._contacts[idx], idx, this._contacts);
-      }
-    }
-  }
-}
-</code></pre>
-        </article>
-    </section>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="comm-error.js.html">comm-error.js</a>, <a href="comm-error.js.html#line8">line 8</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>string</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Human-readable error description.
+                
+            </td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>code</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><code>number</code></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">
+                Numeric error code (mirrors HTTP status codes).
+                
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+    
+    </div>
+
+    
+        <h3 class="subsection-title">Extends</h3>
+
+        
+
+
+    <ul>
+        <li>Error</li>
+    </ul>
+
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
 
 
 
